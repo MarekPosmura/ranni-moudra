@@ -1,0 +1,42 @@
+name: Ranní moudra – push
+
+# Cron je v UTC a NENÍ minutově přesný (občas se o pár minut zpozdí).
+# Praha = UTC+1 (zima) / UTC+2 (léto). Aby ranní 6:00 a odpolední 16:00
+# seděly po celý rok, spouštíme oba páry (zimní i letní posun) a skript
+# send.py pak podle Europe/Prague pošle jen ve správném okně:
+#
+#   06:00 Praha  ->  05:00 UTC (zima)  |  04:00 UTC (léto)
+#   16:00 Praha  ->  15:00 UTC (zima)  |  14:00 UTC (léto)
+on:
+  schedule:
+    - cron: "0 4 * * *"    # léto: ráno
+    - cron: "0 5 * * *"    # zima: ráno
+    - cron: "0 14 * * *"   # léto: odpoledne
+    - cron: "0 15 * * *"   # zima: odpoledne
+  workflow_dispatch: {}     # ruční spuštění tlačítkem v záložce Actions
+
+concurrency:
+  group: rm-send
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Send insight
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
+        run: python scripts/send.py

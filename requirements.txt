@@ -1,0 +1,4 @@
+requests>=2.31
+tzdata>=2024.1        # zoneinfo databáze pro Windows (Europe/Prague)
+anthropic>=0.40      # jen pro scripts/generate.py a sync_books.py
+openpyxl>=3.1        # jen pro scripts/sync_books.py (čtení knihy.xlsx)
