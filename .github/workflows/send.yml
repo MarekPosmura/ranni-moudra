@@ -13,7 +13,7 @@ on:
     - cron: "0 5 * * *"    # zima: ráno
     - cron: "0 14 * * *"   # léto: odpoledne
     - cron: "0 15 * * *"   # zima: odpoledne
-  workflow_dispatch: {}     # ruční spuštění tlačítkem v záložce Actions
+  workflow_dispatch: {}     # ruční spuštění z Actions = pošle HNED (viz níže)
 
 concurrency:
   group: rm-send
@@ -23,9 +23,9 @@ jobs:
   send:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -39,4 +39,6 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
           SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
-        run: python scripts/send.py
+        # Ruční spuštění (workflow_dispatch) = pošli hned (--force).
+        # Cronové běhy jedou normálně jen v ranním/odpoledním okně.
+        run: python scripts/send.py ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
