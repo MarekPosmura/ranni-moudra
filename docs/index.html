@@ -33,7 +33,13 @@
       <div id="list-items"></div>
     </section>
 
-    <button id="more" type="button" hidden>Další moudro →</button>
+    <div id="pager" hidden>
+      <button id="prev" class="pager-btn" type="button" aria-label="Předchozí moudro">←</button>
+      <span id="counter"></span>
+      <button id="next" class="pager-btn" type="button" aria-label="Další moudro">→</button>
+    </div>
+
+    <button id="more" type="button" hidden>🎲 Náhodné moudro</button>
 
     <div id="status" class="status">Načítám…</div>
 

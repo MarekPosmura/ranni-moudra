@@ -126,9 +126,44 @@ h1#theme {
   color: var(--accent-soft);
 }
 
+#pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  margin: 1.75rem auto 0;
+}
+.pager-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--accent);
+  background: transparent;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.05s ease;
+}
+.pager-btn:hover:not(:disabled) { background: var(--accent); color: var(--paper); }
+.pager-btn:active:not(:disabled) { transform: scale(0.94); }
+.pager-btn:disabled { opacity: 0.3; cursor: default; border-color: var(--muted); color: var(--muted); }
+.pager-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+#counter {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  min-width: 6.5rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
 #more {
   display: block;
-  margin: 1.75rem auto 0;
+  margin: 1rem auto 0;
   padding: 0.7rem 1.6rem;
   font-family: var(--sans);
   font-size: 0.92rem;
