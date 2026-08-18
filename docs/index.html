@@ -10,12 +10,28 @@
 </head>
 <body>
   <main id="app">
+    <nav id="nav">
+      <a href="?" id="home-link">Ranní moudra</a>
+      <a href="?view=catalog" id="catalog-link">📖 Katalog</a>
+    </nav>
+
     <article id="card" hidden>
-      <p class="book"><span id="book-title"></span> <span class="sep">·</span> <span id="book-author"></span></p>
+      <p class="book">
+        <a id="book-link" href="?">
+          <span id="book-title"></span> <span class="sep">·</span> <span id="book-author"></span>
+        </a>
+      </p>
       <h1 id="theme"></h1>
       <div id="body"></div>
       <p class="verified" id="verified" hidden>✓ jádro ověřeno</p>
     </article>
+
+    <section id="list" hidden>
+      <a href="#" id="list-back" class="back" hidden>← Zpět</a>
+      <h1 id="list-title"></h1>
+      <p id="list-sub" class="list-sub" hidden></p>
+      <div id="list-items"></div>
+    </section>
 
     <button id="more" type="button" hidden>Další moudro →</button>
 

@@ -42,6 +42,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 
 html, body {
   margin: 0;
@@ -163,3 +164,72 @@ footer {
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
+
+/* ---- navigace ---- */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+}
+#nav a { color: var(--muted); text-decoration: none; }
+#nav a:hover { color: var(--accent); }
+#nav #home-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+}
+
+/* název knihy jako proklik do katalogu */
+#book-link { color: var(--muted); text-decoration: none; }
+#book-link:hover { color: var(--accent); text-decoration: underline; }
+
+/* ---- seznamy (katalog / kniha) ---- */
+#list { animation: rise 0.5s ease both; }
+@media (prefers-reduced-motion: reduce) { #list { animation: none; } }
+
+.back {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.back:hover { color: var(--accent); }
+
+#list-title {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 6vw, 2.2rem);
+  color: var(--accent);
+  margin: 0 0 0.3rem;
+  text-wrap: balance;
+}
+.list-sub {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  margin: 0 0 1.6rem;
+}
+
+#list-items { display: flex; flex-direction: column; gap: 0.55rem; }
+.list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.85rem 1.1rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s ease, transform 0.05s ease;
+}
+.list-item:hover { border-color: var(--accent); }
+.list-item:active { transform: scale(0.99); }
+.li-main { font-family: var(--serif); font-size: 1.06rem; line-height: 1.35; }
+.li-sub { font-family: var(--sans); font-size: 0.75rem; color: var(--muted); letter-spacing: 0.03em; }
