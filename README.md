@@ -190,8 +190,17 @@ python scripts/generate.py --book "Proč spíme" --author "Matthew Walker" --cou
 
 ### Ruční psaní myšlenek
 
-Když chceš text napsat/upravit sám (jako u startovních 5 knih), edituj přímo
-[`supabase/seed_insights.json`](supabase/seed_insights.json) a spusť `python scripts/seed.py`.
+Katalog myšlenek je ve složce [`supabase/seed/`](supabase/seed/) rozdělený po souborech
+(každý má tvar `{"books": [...]}`). `seed.py` načte všechny soubory z té složky.
+Když chceš text upravit sám, edituj příslušný soubor a spusť:
+
+```bash
+python scripts/seed.py            # doplní/aktualizuje (nechá stávající)
+python scripts/seed.py --fresh    # SMAŽE vše a nahraje katalog čistě znovu
+```
+
+`--fresh` je užitečné po větší úpravě katalogu (třeba změně stylu textů): vymaže
+`books`/`insights`/`activity` a nahraje složku načisto, takže nevzniknou duplicity.
 
 - U **novějších knih** si napřed sám ověř jádro myšlenky (web) a přidej `--verified`
   (na stránce se pak ukáže „✓ jádro ověřeno“).

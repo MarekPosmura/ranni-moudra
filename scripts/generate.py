@@ -30,17 +30,19 @@ Piš česky. Dodržuj přísně tato pravidla:
 - Nevymýšlej čísla stránek, kapitol ani konkrétní statistiky, které si nejsi jistý.
   Když to nejde ověřit, neuváděj to.
 - Drž se ověřeného jádra myšlenek autora. Nehalucinuj koncepty, které v knize nejsou.
-- Tón: srozumitelný, praktický, česky, aplikovatelný v běžném dni. Ne akademicky, ne rozvláčně.
-- Každý odstavec ať nese něco použitelného, ne omáčku.
-- Každá myšlenka = krátký nadpis tématu (2–5 slov) + 2 až 3 odstavce.
+- Tón: SPISOVNÁ čeština, ale lidská a čtivá — ne akademicky, ne rozvláčně, a NE hovorově
+  (žádné „dobrej/špatnej/bejt/nenahraditelnýho"; správně „dobrý/špatný/být/nenahraditelného").
+  Tykej čtenáři. Každý odstavec ať nese něco použitelného, ne omáčku.
+- Každá myšlenka = krátký nadpis tématu (2–5 slov) + 3 odstavce + na závěr JEDNA věta
+  shrnutí uvozená „Ve zkratce:". To shrnutí je poslední odstavec.
 - Témata i myšlenky ať se navzájem NEopakují.
 
 Vrať POUZE validní JSON pole, nic víc, bez markdown bloků. Formát:
 [
-  {"theme": "Krátký nadpis", "body": "Odstavec 1.\\n\\nOdstavec 2.\\n\\nOdstavec 3."},
+  {"theme": "Krátký nadpis", "body": "Odstavec 1.\\n\\nOdstavec 2.\\n\\nOdstavec 3.\\n\\nVe zkratce: jedna věta."},
   ...
 ]
-Odstavce odděluj dvojitým zalomením řádku (\\n\\n)."""
+Odstavce (i závěrečné shrnutí) odděluj dvojitým zalomením řádku (\\n\\n)."""
 
 
 def build_user_prompt(book: str, author: str, count: int, hint: str | None) -> str:

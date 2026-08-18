@@ -1,0 +1,193 @@
+{
+  "_comment": "Dávka 3 — myšlení/rozhodování. Spisovný styl + shrnutí. Parafráze, žádné citace.",
+  "books": [
+    {
+      "title": "Myšlení, rychlé a pomalé",
+      "author": "Daniel Kahneman",
+      "verified": false,
+      "insights": [
+        {
+          "theme": "Dva systémy myšlení",
+          "body": "Kahneman popisuje mysl jako souhru dvou systémů. Systém 1 je rychlý, automatický a intuitivní — okamžitě rozpozná tvář, dokončí větu, ucukne před nebezpečím. Systém 2 je pomalý, uvážený a namáhavý — počítá, srovnává, kontroluje. Většinu dne řídí naše jednání ten rychlý, protože je pohodlný a levný na energii.\n\nProblém je, že Systém 1 sice zvládne skvěle rutinu, ale u složitějších úsudků se často mýlí a přitom si je jistý. Vytváří dojmy a pocity, které Systém 2 obvykle jen schválí, aniž by je pořádně prověřil. Tak vznikne většina našich unáhlených, ale sebejistých závěrů.\n\nPrakticky: u důležitých rozhodnutí schválně zapoj toho pomalého. Zpomal, napiš si to, zeptej se „co mi tu první dojem možná zakrývá?“. Nejde vypnout intuici, ale jde ji u vážných věcí nechat zkontrolovat rozvahou.\n\nVe zkratce: Rychlá intuice řídí většinu dne, ale u vážných rozhodnutí ji nech zkontrolovat pomalou rozvahou."
+        },
+        {
+          "theme": "Co vidíš, to je vše",
+          "body": "Naše mysl si dělá závěry z toho, co má právě před sebou, a chová se, jako by žádné jiné informace neexistovaly. Kahneman tomu říká „co vidíš, to je vše“. Nezajímá nás, co nevíme — skládáme si soudržný příběh z útržků, které máme, a jsme si jím sebejistí tím víc, čím méně toho ve skutečnosti víme.\n\nProto rychlá sebejistota není známkou pravdy, ale často jen známkou toho, že příběh v hlavě hezky drží pohromadě. Chybějící informace do něj prostě nezapočítáme, protože nám ani nepřijdou na mysl.\n\nDnes u nějakého rychlého soudu zkus přidat otázku „co bych ještě potřeboval vědět, abych se rozhodl dobře?“. Už jen připomenutí, že něco nevidíš, tě posune blíž ke skutečnosti.\n\nVe zkratce: Soudíme jen z toho, co máme před očima — ptej se, co ještě nevíš, než si budeš jistý."
+        },
+        {
+          "theme": "Kotva prvního čísla",
+          "body": "Když máme něco odhadnout, první číslo, které nám přijde na mysl nebo které někdo utrousí, nám nenápadně stáhne odhad ke svému okolí. Kahneman ukazuje, že tahle „kotva“ funguje i tehdy, když je číslo úplně náhodné a víme to. Prostě se od nabídnuté hodnoty odpichujeme a nedostaneme se od ní dost daleko.\n\nToho vědomě využívají vyjednavači, prodejci i ceníky: vysoká úvodní cena posune celé tvé uvažování nahoru, i když ji odmítneš. Není to o tvé chytrosti — kotvení působí i na experty, kteří o něm vědí.\n\nPrakticky: u ceny nebo odhadu si nejdřív udělej vlastní číslo, než uslyšíš cizí. A když už kotvu slyšíš, ber ji jako trik a schválně se od ní odtáhni dál, než ti přijde přirozené.\n\nVe zkratce: První číslo ti nenápadně zkreslí odhad — udělej si vlastní dřív, než uslyšíš cizí."
+        },
+        {
+          "theme": "Heuristika dostupnosti",
+          "body": "Riziko a četnost posuzujeme podle toho, jak snadno si vybavíme příklad. Co je čerstvé, dramatické nebo často v médiích, nám připadá pravděpodobnější, i když tomu čísla neodpovídají. Kahneman tomu říká heuristika dostupnosti: co je snadno po ruce v paměti, to považujeme za časté.\n\nProto se po jedné hlasité události přeceňuje její riziko a nudná, ale mnohem častější nebezpečí podceňujeme. Naše obavy tak víc odrážejí to, co jsme naposledy viděli ve zprávách, než skutečný stav světa.\n\nDnes, když ti nějaké riziko připadá velké, zeptej se, jestli to není hlavně proto, že máš čerstvý živý příklad. Pravděpodobnost se počítá z čísel, ne z toho, jak snadno se ti vybaví historka.\n\nVe zkratce: Za pravděpodobné máme to, co si snadno vybavíme — ověř dojem čísly, ne živostí vzpomínky."
+        },
+        {
+          "theme": "Averze ke ztrátě",
+          "body": "Ztráta nás bolí zhruba dvakrát víc, než nás potěší stejně velký zisk. Kahneman ukazuje, že tahle nesouměrnost tiše řídí spoustu rozhodnutí: držíme se prodělečných investic, abychom ztrátu nemuseli „uzavřít“, a vyhýbáme se rozumným rizikům jen proto, že možná ztráta zabolí silněji, než odpovídá.\n\nStejná věc se navíc jeví jinak podle toho, jestli ji vnímáme jako zisk, nebo jako ztrátu. Vzdát se něčeho, co už máme, nás bolí víc, než nezískat totéž — proto tak neradi měníme a rušíme.\n\nPrakticky: u rozhodnutí se ptej, jestli neváháš hlavně kvůli strachu ze ztráty, ne kvůli skutečné nevýhodnosti. A dívej se na celkový výsledek, ne jen na to, co bys „ztratil“ oproti dnešku.\n\nVe zkratce: Ztráta bolí dvakrát víc než stejný zisk těší — hlídej, aby ti tenhle strach neřídil rozhodnutí."
+        },
+        {
+          "theme": "Rámování mění rozhodnutí",
+          "body": "Stejná informace vyzní úplně jinak podle toho, jak je podaná. „Přežije 90 %“ a „zemře 10 %“ znamená totéž, ale první zní přijatelně a druhé děsivě. Kahneman ukazuje, že se často nerozhodujeme podle faktů, ale podle jejich rámu — podle toho, jak nám je někdo naservíroval.\n\nToho využívají reklamy, politici i my sami, když si věc zarámujeme tak, aby vyzněla, jak potřebujeme. Rám přitom působí, i když si rozdíl uvědomíme; přeformulovat jednu a tutéž věc dokáže obrátit naše rozhodnutí.\n\nDnes u nějaké nabídky nebo zprávy zkus přeformulovat totéž opačně a podívej se, jestli by ses rozhodl stejně. Když rám mění tvé rozhodnutí, rozhoduješ podle obalu, ne podle obsahu.\n\nVe zkratce: Stejný fakt vyzní jinak podle podání — přeformuluj ho opačně a uvidíš, jestli soudíš obsah, nebo obal."
+        },
+        {
+          "theme": "Přílišná sebejistota",
+          "body": "Nejsme jen omylní — jsme omylní a přitom si příliš věříme. Kahneman ukazuje, že lidé (včetně expertů) systematicky přeceňují, jak přesně rozumí světu a jak dobře umí předvídat budoucnost. Náš pocit jistoty vychází ze soudržnosti příběhu v hlavě, ne z jeho pravdivosti.\n\nK tomu se přidává zpětné zkreslení: jakmile něco proběhne, máme pocit, že to bylo předem jasné, a zapomeneme, jak nejistí jsme byli předtím. Tak si udržujeme iluzi, že světu rozumíme víc, než je pravda.\n\nPrakticky ber vlastní jistotu s rezervou, hlavně u předpovědí. Ptej se „jak bych poznal, že se mýlím?“ a nech si prostor pro to, že věci dopadnou jinak. Pokora tě ochrání líp než sebevědomí.\n\nVe zkratce: Své jistotě i předpovědím věř s rezervou — pocit jistoty neznamená, že máš pravdu."
+        },
+        {
+          "theme": "Regrese k průměru",
+          "body": "Po mimořádně dobrém výkonu obvykle přijde slabší a po mimořádně špatném lepší — prostě proto, že extrémy jsou zčásti dílem náhody a ta se příště nezopakuje. Kahneman tomu říká regrese k průměru a upozorňuje, že si ji pravidelně pleteme s příčinou a následkem.\n\nOdtud plyne klasický omyl: pochvala „nefunguje“ (po skvělém výkonu stejně přijde horší) a kritika „funguje“ (po mizerném výkonu stejně přijde lepší) — přitom za to nemůže ani jedno, jen návrat k průměru. Hledáme příběh tam, kde stačí obyčejná statistika.\n\nDnes, když někde vidíš prudký výkyv nahoru nebo dolů, počítej s tím, že se další hodnota nejspíš vrátí blíž k průměru. Ušetří tě to falešných závěrů o tom, co „zabralo“.\n\nVe zkratce: Po extrému obvykle přijde návrat k průměru — nepřičítej náhodě příčinu a následek."
+        },
+        {
+          "theme": "Prožívající a vzpomínající já",
+          "body": "V každém z nás jsou vlastně dvě já. Prožívající já zažívá přítomný okamžik; vzpomínající já pak z celého zážitku uloží jen pár momentů a podle nich rozhodne, jestli to „stálo za to“. Kahneman ukazuje, že vzpomínka se řídí hlavně vrcholem a koncem, ne součtem ani délkou zážitku.\n\nProto může být dovolená plná krásných dní pokažená jedním špatným koncem, a naopak nepříjemná zkušenost s dobrým finálem se vryje jako lepší. Rozhodujeme se pak podle vzpomínek, které jsou zkreslené, ne podle toho, co jsme reálně prožili.\n\nPrakticky: dbej na konce — jak zakončíš večer, projekt, setkání, hodně ovlivní, jak si to zapamatuješ. A nepodceňuj obyčejné dobré prožívání jen proto, že po sobě nezanechá dramatickou vzpomínku.\n\nVe zkratce: Vzpomínku tvoří hlavně vrchol a konec, ne celý průběh — pečuj o konce a nezapomínej prožívat."
+        },
+        {
+          "theme": "Záměna otázky za snazší",
+          "body": "Když nám někdo položí těžkou otázku, mysl často potají odpoví na jinou, snazší, a tváří se, že odpověděla na tu původní. „Bude ta investice dobrá?“ tiše zamění za „mám z ní teď dobrý pocit?“. Kahneman tomu říká substituce a je to jeden z hlavních zdrojů rychlých, sebejistých, ale mylných soudů.\n\nTa náhrada je neviditelná — nevšimneme si, že jsme odpověděli na něco jiného, protože odpověď přišla hladce a rychle. Pocit lehkosti nás přesvědčí, že jsme věc promysleli, i když jsme jen sáhli po nejbližší jednodušší otázce.\n\nDnes u důležitého soudu zkontroluj, jestli opravdu odpovídáš na položenou otázku, nebo na její snadnější náhradu. „Rozumím tomu?“ není totéž co „je mi to sympatické?“.\n\nVe zkratce: Na těžkou otázku mysl potají odpoví snazší — ověř, že soudíš skutečnou otázku, ne její náhradu."
+        }
+      ]
+    },
+    {
+      "title": "Černá labuť",
+      "author": "Nassim N. Taleb",
+      "verified": false,
+      "insights": [
+        {
+          "theme": "Co je černá labuť",
+          "body": "Taleb nazývá „černou labutí“ vzácnou událost, kterou nikdo nečekal, která má obrovský dopad a kterou si pak zpětně vysvětlíme, jako by byla předvídatelná. Krachy, vynálezy, pandemie, úspěchy z ničeho — dějiny neposouvají malé pravidelné krůčky, ale právě tyhle výjimečné rány.\n\nProblém je, že plánujeme podle běžného a předvídatelného, zatímco skutečný osud rozhodnou právě ty výjimky, se kterými jsme nepočítali. Soustředíme se na to, co známe a umíme spočítat, a slepě přehlížíme prostor mimo — odkud ovšem přichází to nejdůležitější.\n\nPrakticky: neptej se jen „co je pravděpodobné“, ale „co by mě zničilo, i kdyby to bylo nepravděpodobné“. Právě vzácné, ale ničivé události zaslouží tvou pozornost víc než každodenní šum.\n\nVe zkratce: Osud rozhodnou vzácné, obrovské a nečekané události — plánuj podle nich, ne jen podle běžného."
+        },
+        {
+          "theme": "Historie skáče, neplyne",
+          "body": "Rádi si představujeme, že svět se vyvíjí plynule a předvídatelně, krok za krokem. Taleb tvrdí opak: skutečné dějiny se dějí skoky. Dlouho se zdánlivě nic neděje a pak jedna událost přepíše celou hru. Klidná období nás uspí a my začneme věřit, že klid je normální stav.\n\nProto lineární předpovědi tak často selžou — protáhnou dosavadní trend rovně do budoucna, jenže budoucnost přijde zlomem, ne prodloužením čáry. Čím delší klid, tím větší sklon podcenit, že přijde zvrat.\n\nDnes u jakékoli předpovědi „takhle to půjde dál“ počítej s tím, že realita může skočit stranou. Nestav plány tak, aby fungovaly jen v klidných časech.\n\nVe zkratce: Svět se nemění plynule, ale skoky — nespoléhej, že klid a dosavadní trend potrvají."
+        },
+        {
+          "theme": "Klam narativu",
+          "body": "Po každé události si okamžitě vyrobíme příběh, proč se stala a proč to bylo vlastně jasné. Taleb tomu říká klam narativu: dodatečné vysvětlení nám dá falešný pocit, že světu rozumíme a že příště to poznáme dopředu. Jenže ten příběh vzniká až potom a skutečnou nepředvídatelnost jen zakrývá.\n\nPříběhy jsou lákavé, protože se snadno pamatují a znějí chytře. Právě proto jim věříme víc než suchým datům — a přehlédneme, kolik náhody a štěstí ve hře reálně bylo.\n\nDnes, když slyšíš plynulé vysvětlení, proč se něco „muselo“ stát, ber ho s rezervou. Zpětný příběh není důkazem, že to šlo předvídat.\n\nVe zkratce: Dodatečné příběhy vytvářejí iluzi, že světu rozumíme — nepleť si zpětné vysvětlení s předvídatelností."
+        },
+        {
+          "theme": "Tichý důkaz přeživších",
+          "body": "Vidíme jen ty, kdo uspěli — vítěze, přeživší, slavné příběhy — a z nich vyvozujeme, co k úspěchu vede. Nevidíme obrovský hřbitov těch, kdo dělali totéž a neuspěli, protože o nich nikdo nemluví. Taleb tomu říká tichý důkaz a je to jeden z hlavních zdrojů falešných ponaučení.\n\nKdyž studuješ jen úspěšné, dojdeš k závěrům jako „riskuj vše a věř si“ — jenže stejně tak riskovaly tisíce těch, co padli a zmizeli z dohledu. Bez těch neviditelných příběhů je celá statistika zkreslená.\n\nDnes u každého „receptu na úspěch“ se ptej, kolik lidí dělalo totéž a přesto neuspělo. Teprve s nimi dostaneš pravdivý obrázek.\n\nVe zkratce: Vidíme jen vítěze, ne zástup těch, kdo dělali totéž a padli — počítej i s neviditelnými poraženými."
+        },
+        {
+          "theme": "Ludický klam",
+          "body": "V kasinu znáš pravidla i pravděpodobnosti přesně — jenže skutečný svět není kasino. Taleb varuje před „ludickým klamem“: pletením úhledných modelů a her s reálným životem, kde největší rizika leží mimo pravidla a mimo tabulku. Nebezpečné není to, co jsme spočítali, ale to, s čím model vůbec nepočítá.\n\nProto přesné výpočty rizika dávají falešný pocit bezpečí. Čím složitější a sebejistější model, tím snáz zapomeneme, že skutečnost si nemusí hrát podle jeho pravidel.\n\nDnes ber čísla a modely jako pomůcku, ne jako pravdu. Ptej se, co všechno model vynechává — právě tam obvykle číhá skutečné riziko.\n\nVe zkratce: Skutečný svět není kasino s jasnými pravidly — největší riziko leží mimo tvůj model."
+        },
+        {
+          "theme": "Extrémistán a Průměrostán",
+          "body": "Taleb dělí svět na dvě krajiny. V „Průměrostánu“ žádný jedinec výrazně nezmění celek — třeba tělesná výška: ani nejvyšší člověk průměr nepohne. V „Extrémistánu“ může jediná událost nebo jedinec převážit vše ostatní — bohatství, prodeje knih, dopady krachů. A právě v Extrémistánu žije většina toho, na čem dnes záleží.\n\nProblém je, že intuice a průměry, které fungují v Průměrostánu, v Extrémistánu selhávají. Průměr tam nic neříká, protože jedna extrémní hodnota přebije tisíce běžných.\n\nDnes u čísel rozliš, ve které krajině jsi. Kde může jeden extrém rozhodnout o všem, tam se nespoléhej na průměr a počítej s tím, že rozhodne výjimka.\n\nVe zkratce: Tam, kde jeden extrém přebije vše ostatní, průměr klame — rozliš Průměrostán od Extrémistánu."
+        },
+        {
+          "theme": "Buď odolný vůči nečekanému",
+          "body": "Když nejde předvídat, kdy a odkud přijde rána, nemá smysl hádat — má smysl být na ni připravený. Taleb radí stavět život i rozhodnutí tak, aby přežily i to, co jsi nečekal: velká rezerva, žádná osudová sázka, ochrana proti nejhoršímu. Nejde o to trefit budoucnost, ale nenechat se jí zničit.\n\nJednou z podob je „činka“ — většinu drž hodně bezpečně a jen malý díl vystav odvážnému riziku s omezenou ztrátou a otevřeným ziskem. Tak tě žádná černá labuť nepoloží a některá tě naopak může posunout.\n\nDnes se u důležité věci neptej „jak to dopadne“, ale „přežiju to, když se to zvrtne?“. Odolnost je cennější než sebelepší předpověď.\n\nVe zkratce: Nečekané nepředvídej, ale přežij ho — stav vše tak, aby tě žádná rána nepoložila."
+        },
+        {
+          "theme": "Po bitvě je každý generál",
+          "body": "Když událost proběhne, náš mozek přepíše minulost tak, že to celé vypadá jako jasně předvídatelné, a my zapomeneme, jak nejistí a překvapení jsme byli předtím. Taleb ukazuje, že tahle iluze zpětné jasnosti nás udržuje v přesvědčení, že příště už to poznáme dopředu.\n\nDůsledek je zrádný: přeceňujeme svou schopnost předvídat a podceňujeme roli náhody. Kdybychom si pamatovali, jak málo jsme toho tušili, byli bychom mnohem pokornější k budoucnosti.\n\nDnes, když ti něco přijde „přece jasné“, vzpomeň si, jestli jsi to opravdu čekal předem. Poctivá paměť na vlastní překvapení tě ochrání před falešnou sebejistotou.\n\nVe zkratce: Po události se vše zdá bylo jasné předem — nepleť si zpětnou jasnost se schopností předvídat."
+        },
+        {
+          "theme": "Neznámé neznámé",
+          "body": "Nejvíc nám neublíží to, co nevíme, ale to, o čem ani nevíme, že to nevíme. Taleb rozlišuje známé neznámé (víš, že to neznáš, můžeš se připravit) a neznámé neznámé (netušíš, že něco takového vůbec existuje). Právě z té druhé skupiny přicházejí černé labutě.\n\nProto je nebezpečné soustředit se jen na rizika, která umíme pojmenovat a spočítat. Dávají pocit kontroly, ale skutečné pohromy obvykle přijdou ze slepého místa, o kterém jsme neuvažovali.\n\nDnes si u důležitého rozhodnutí přiznej, že tvůj seznam rizik není úplný. Nech si rezervu právě na to, co tě ještě nenapadlo — ne jen na to, co jsi vyjmenoval.\n\nVe zkratce: Nejvíc škodí to, o čem nevíš, že to nevíš — nech si rezervu i na rizika mimo seznam."
+        },
+        {
+          "theme": "Nepřeceňuj předpovědi",
+          "body": "Experti na předpovídání budoucnosti se mýlí překvapivě často, a přitom vystupují velmi sebejistě. Taleb ukazuje, že čím složitější a delší předpověď, tím menší cenu má — svět je příliš nelineární, než aby šel spolehlivě protáhnout dopředu. Přesto předpovědím věříme, protože nám dávají iluzi kontroly.\n\nHorší je, že sebejistá čísla nás svádějí sázet na jeden scénář. Když pak přijde něco jiného, jsme nejen překvapení, ale i nechránění.\n\nDnes ber jakoukoli sebejistou předpověď jako jeden z možných příběhů, ne jako jistotu. Plánuj tak, abys uspěl (nebo aspoň přežil) i tehdy, když se předpověď nenaplní.\n\nVe zkratce: Předpovědi jsou nespolehlivé a lákají vsadit na jeden scénář — počítej i s tím, že dopadne jinak."
+        }
+      ]
+    },
+    {
+      "title": "Navalův almanach",
+      "author": "Eric Jorgenson",
+      "verified": true,
+      "insights": [
+        {
+          "theme": "Bohatství vydělává, i když spíš",
+          "body": "Naval odlišuje peníze, status a skutečné bohatství. Bohatství jsou aktiva, která pro tebe vydělávají, i když spíš — firma, podíl, produkt, kód, obsah, který pracuje bez tebe. Plat naopak vyměňuje čas za peníze a přestane téct ve chvíli, kdy přestaneš pracovat.\n\nProto usiluj o vlastnictví, ne jen o výplatu. Kdo prodává jen svůj čas, má strop daný počtem hodin; kdo vlastní kus něčeho škálovatelného, roste, i když zrovna nepracuje. To je rozdíl mezi honěním se a budováním.\n\nDnes se zeptej: co z toho, co dělám, pro mě může vydělávat i bez mého času? A jak získat aspoň malý podíl na výsledku, ne jen odměnu za hodiny.\n\nVe zkratce: Skutečné bohatství jsou aktiva, která vydělávají i bez tvého času — usiluj o vlastnictví, ne jen o plat."
+        },
+        {
+          "theme": "Specifické znalosti",
+          "body": "Naval mluví o „specifických znalostech“ — tom, v čem jsi jedinečně dobrý a co se nedá snadno naučit ani nahradit. Obvykle to leží tam, kde se protíná, co tě opravdu baví, s tím, co ti jde tak přirozeně, že ti to ani nepřipadá jako práce, zatímco pro ostatní je to dřina.\n\nTakové znalosti nezískáš ze školních osnov — ty učí to, co umí každý, a proto se snadno nahradí. Specifické znalosti rostou z tvé zvědavosti, z hraní si, z toho, co bys dělal, i kdyby ti za to nikdo neplatil.\n\nDnes si všimni, u čeho ztrácíš pojem o čase a co ti jde líp než okolí. Právě tam nejspíš leží tvá specifická znalost, kterou má cenu prohlubovat.\n\nVe zkratce: Buduj to, v čem jsi jedinečně dobrý a co se nedá snadno naučit — leží tam, kde se baví protíná s talentem."
+        },
+        {
+          "theme": "Páka bez povolení",
+          "body": "Sám o sobě zvládneš jen tolik, kolik má den hodin. Páka násobí tvůj výsledek — a Naval zdůrazňuje novou, mocnou formu: kód a média. Na rozdíl od najímání lidí nebo shánění kapitálu je zadarmo a nikoho o svolení žádat nemusíš. Jednou napsaný program nebo jednou natočené video pracuje pro tisíce lidí, zatímco ty spíš.\n\nToto je nejdemokratičtější páka historie: nepotřebuješ dědictví ani armádu zaměstnanců, stačí přístup k internetu a něco, co stojí za to sdílet. Právě proto může dnes jeden člověk dosáhnout dosahu, který dřív potřeboval celou firmu.\n\nDnes se zamysli, jak z toho, co umíš, udělat něco, co běží samo — text, nástroj, obsah, produkt. Vlož práci jednou a nech ji pracovat opakovaně.\n\nVe zkratce: Kód a média jsou páka bez povolení — vlož práci jednou a nech ji pracovat pro tisíce, zatímco spíš."
+        },
+        {
+          "theme": "Odpovědnost a tvé jméno",
+          "body": "Kdo je ochotný dát v sázku své jméno a nést zodpovědnost i za neúspěch, získává důvěru, příležitosti i větší podíl na odměně. Naval říká, že společnost bohatě odměňuje ty, kdo se nebojí vystoupit z anonymity a připojit svou tvář k výsledku — protože riziko selhání na sebe většina lidí brát nechce.\n\nZ odpovědnosti plyne i pověst, a ta se v čase skládá jako úrok. Jméno, kterému lidé věří, ti otevírá dveře, na které se jinak čeká roky. Anonymní bezpečí je pohodlné, ale strop má nízko.\n\nDnes u něčeho vystup z davu a připoj k tomu své jméno — názor, projekt, práci, za kterou se postavíš. Riziko je cenou za důvěru, kterou tím budeš získávat.\n\nVe zkratce: Dej v sázku své jméno a nes odpovědnost — důvěra a pověst se skládají jako úrok."
+        },
+        {
+          "theme": "Prodávej úsudek, ne čas",
+          "body": "Dokud prodáváš hodiny, jsi placený za přítomnost, ne za výsledek — a máš strop daný časem. Naval radí posunout se k tomu, aby tě platili za úsudek: za rozhodnutí, know-how a odpovědnost, jejichž hodnota nezávisí na tom, kolik hodin u toho prosedíš.\n\nÚsudek se navíc pojí s pákou: dobré rozhodnutí uplatněné přes kód, kapitál nebo lidi vynese mnohonásobně víc než totéž rozhodnutí bez páky. Nejlépe placení lidé nejsou ti nejpracovitější, ale ti, jejichž úsudek řídí velké věci.\n\nDnes se ptej, jak se posunout od placení za čas k placení za výsledek a rozhodnutí. Buduj si pověst někoho, jehož úsudku se dá věřit.\n\nVe zkratce: Nech se platit za úsudek a výsledek, ne za odsezené hodiny — jen tak se zbavíš stropu daného časem."
+        },
+        {
+          "theme": "Touha je smlouva o neštěstí",
+          "body": "Naval říká, že touha je „smlouva, kterou uzavřeš sám se sebou, že budeš nešťastný, dokud to nedostaneš“. Každé silné chtění tě staví do stavu nespokojenosti — přítomnost je najednou málo, protože ti něco chybí. Není špatné chtít, ale je dobré si vybrat pár velkých tužeb vědomě a zbytek pustit.\n\nČím víc věcí zoufale chceš, tím víc frontou nespokojenosti si sám naplníš den. Naopak méně tužeb znamená víc klidu — spousta štěstí není v získávání, ale v tom, přestat chtít to, co ve skutečnosti nepotřebuješ.\n\nDnes si všimni jedné touhy, která ti kazí přítomnost, a zvaž, jestli ji opravdu potřebuješ. Vybírej si tužby jako velké sázky, ne jako nekonečný seznam.\n\nVe zkratce: Každá touha je slib být nešťastný, dokud ji nesplníš — vybírej si jich málo a zbytek pusť."
+        },
+        {
+          "theme": "Štěstí je dovednost",
+          "body": "Naval nebere štěstí jako náhodu, ale jako dovednost a volbu, kterou lze trénovat. Velká část neklidu pochází z neustálého srovnávání, chtění a vnitřního komentáře, který si přidáváme k realitě. Když se ten hluk ztiší, zjistíš, že klid je spíš výchozí stav, který si sami zasypáváme.\n\nMír proto nepřichází tím, že splníš další podmínku („až budu mít…, pak budu spokojený“), ale tím, že přestaneš tolik chtít a méně bojuješ s přítomností. Je to spíš odstraňování než přidávání.\n\nDnes zkus jednu chvíli nechat být takovou, jaká je, bez vnitřního komentáře, že by měla být jiná. Klid je volba, kterou můžeš dělat opakovaně.\n\nVe zkratce: Štěstí a klid jsou dovednost, ne náhoda — víc je najdeš tišením chtění než plněním dalších podmínek."
+        },
+        {
+          "theme": "Hraj dlouhé hry s dlouhými lidmi",
+          "body": "Naval radí hrát dlouhé hry s dlouhými lidmi — s těmi, se kterými budeš spolupracovat roky. Skoro všechny velké odměny v životě, ať už jde o bohatství, vztahy, nebo znalosti, pramení ze složeného úročení: z toho, že něco necháš dost dlouho růst, aniž bys to přerušil.\n\nS tím souvisí i pověst a důvěra. Když jednáš férově a zůstáváš u lidí i projektů dlouhodobě, důvěra se hromadí a otevírá příležitosti, které jednorázový hráč nikdy nedostane. Ten, kdo pořád mění partnery i strategie, začíná pokaždé od nuly.\n\nDnes se ptej, které vztahy a projekty stojí za to, abys u nich vydržel roky — a do těch investuj přednostně. Složené úročení funguje jen tomu, kdo neodchází.\n\nVe zkratce: Velké odměny plynou ze složeného úročení — hraj dlouhé hry s lidmi, u kterých vydržíš roky."
+        },
+        {
+          "theme": "Čti pro základy",
+          "body": "Naval je vášnivý čtenář, ale radí číst spíš do hloubky než do šířky. Cennější než honit se za novinkami je pořádně pochopit základy — matematiku, ekonomii, psychologii, základní vědy — a klidně opakovaně číst pár skvělých knih, dokud ti jejich myšlenky nepřejdou do krve.\n\nZáklady totiž vydrží a přenášejí se do všeho ostatního; módní trik zestárne, ale pevné principy platí napříč obory. Lepší je znát pár věcí opravdu dobře než tisíc povrchně.\n\nDnes si vyber jednu základní oblast nebo jednu skvělou knihu a věnuj jí hloubku místo dalšího rychlého titulu. Čti, abys rozuměl, ne abys měl odškrtnuto.\n\nVe zkratce: Čti do hloubky a opakuj základy — pevné principy vydrží a přenesou se všude, novinky zestárnou."
+        },
+        {
+          "theme": "Vyber si jednu velkou věc",
+          "body": "Rozptýlení je nepřítel výsledku. Naval připomíná, že energii i pozornost máš omezenou, a když ji rozdělíš mezi deset věcí, nikde nedosáhneš hloubky, kde teprve začínají velké odměny. Zaměření na jednu věc, ve které jsi jedinečně dobrý, násobí, čeho můžeš dosáhnout.\n\nToto je těžké, protože nové příležitosti lákají a říct „ne“ dané věci bolí. Ale právě schopnost soustředit se dlouhodobě na to podstatné a ignorovat zbytek odděluje ty, kdo něco dokážou, od těch, kdo se pořád rozbíhají.\n\nDnes si ujasni, která jedna věc si zaslouží tvou hlavní pozornost, a vědomě odmítni pár rozptýlení. Hloubka poráží roztříštěnost.\n\nVe zkratce: Soustřeď se na jednu věc, ve které jsi jedinečný — hloubka přináší odměny, které roztříštěnost nikdy nedá."
+        }
+      ]
+    },
+    {
+      "title": "Poor Charlie's Almanack",
+      "author": "Charlie Munger",
+      "verified": true,
+      "insights": [
+        {
+          "theme": "Latťoví mentálních modelů",
+          "body": "Munger radí nosit v hlavě „latťoví“ mentálních modelů — základních myšlenek z mnoha oborů: z fyziky, biologie, psychologie, ekonomie, matematiky. Kdo zná jen jeden obor, ohýbá si podle něj celý svět (pro člověka s kladivem je všechno hřebík). Teprve víc modelů dohromady umožní vidět problém, jaký doopravdy je.\n\nNejde o to být expert na všechno, ale znát klíčové principy z každé velké discipliny a umět je zkombinovat. Skutečné pochopení totiž leží na průsečíku oborů, ne uvnitř jednoho.\n\nDnes k nějakému problému schválně přilož druhý úhel z jiné oblasti, než jakou obvykle používáš. Víc modelů znamená míň slepých míst.\n\nVe zkratce: Nos v hlavě modely z mnoha oborů a kombinuj je — jeden úhel pohledu tě vždy někde zaslepí."
+        },
+        {
+          "theme": "Invertuj, vždycky invertuj",
+          "body": "Munger má oblíbené heslo: „Invertuj, vždycky invertuj.“ Místo abys se ptal jen „jak uspět“, ptej se „jak bych spolehlivě selhal“ — a pak se těm věcem vyhni. Řadu problémů je mnohem snazší vyřešit odzadu: nejdřív odstranit jistou cestu ke katastrofě.\n\nChceš být šťastný? Sepiš, co spolehlivě dělá člověka nešťastným (závist, zahořklost, nespolehlivost), a tomu se vyhýbej. Chceš dobré investice? Nejdřív vyluč hloupé chyby. Vyhnout se prohře je často jistější než trefit výhru.\n\nDnes u nějakého cíle otoč otázku: co by ho spolehlivě potopilo? A začni tím, že tohle přestaneš dělat.\n\nVe zkratce: Ptej se „jak bych selhal“ a tomu se vyhni — vyhnout se prohře je často jistější než trefit výhru."
+        },
+        {
+          "theme": "Vyhýbej se hlouposti",
+          "body": "Munger tvrdí, že velkou část úspěchu neudělá genialita, ale důsledné vyhýbání se hlouposti. Nemusíš být nejchytřejší v místnosti; stačí systematicky nedělat velké, zbytečné chyby, které ostatní pořád opakují. Je jednodušší být důsledně nehloupý než občas geniální.\n\nZ toho plyne pokora i praktičnost: sbírej seznam typických omylů (svých i cizích) a hlídej si je jako pilot kontrolní list. Vyhnout se pár velkým průšvihům vynese v čase víc než jeden skvělý tah.\n\nDnes se místo otázky „jak být chytřejší“ zeptej „jaké hlouposti se můžu vyhnout“. Nedělat velké chyby je podceňovaná superschopnost.\n\nVe zkratce: Úspěch dělá spíš důsledné vyhýbání se hlouposti než genialita — nedělat velké chyby vynese nejvíc."
+        },
+        {
+          "theme": "Kruh kompetence",
+          "body": "Munger a Buffett zdůrazňují „kruh kompetence“ — oblast, které opravdu rozumíš. Nejdůležitější není, jak je ten kruh velký, ale jestli přesně víš, kde jsou jeho hranice. Uvnitř můžeš jednat s jistotou; venku bys měl být maximálně opatrný, nebo se rozhodnutí vyhnout.\n\nProblémy nevznikají z toho, co nevíme, ale z toho, když si myslíme, že víme, a přitom jsme za hranicí své kompetence. Přiznat „tomuhle nerozumím“ je paradoxně jedna z nejcennějších dovedností.\n\nDnes si u rozhodnutí poctivě řekni, jestli je uvnitř tvého kruhu kompetence. Když ne, buď se dovzdělej, nebo ruce pryč.\n\nVe zkratce: Znej hranice toho, čemu rozumíš — problémy nedělá neznalost, ale jednání za hranicí vlastní kompetence."
+        },
+        {
+          "theme": "Poznej svá zkreslení",
+          "body": "Munger sesbíral desítky psychologických sklonů, které nás systematicky vedou k chybám — od tendence chtít oplácet, přes vliv závisti a averze ke ztrátě, po to, jak nás ovlivní pouhé opakování nebo autorita. Nejde o to je odstranit (to nejde), ale je znát a hlídat si, kdy nás tlačí.\n\nZvlášť zrádné je, že působí neviditelně a zároveň se často sčítají — několik sklonů najednou dokáže i chytrého člověka dotlačit k jasně špatnému rozhodnutí. Kdo je pojmenuje, získá aspoň šanci se bránit.\n\nDnes u důležitého rozhodnutí zkontroluj, jestli tě netlačí nějaké zkreslení — spěch, autorita, závist, strach ze ztráty. Pojmenovat sklon je první krok, jak mu nepodlehnout.\n\nVe zkratce: Poznej vlastní psychologická zkreslení a hlídej, kdy tě tlačí — pojmenovat sklon je první obrana proti němu."
+        },
+        {
+          "theme": "Trpělivost a nečinnost",
+          "body": "Munger říká, že velké peníze nejsou v nakupování a prodávání, ale v čekání. Většinu času se nic výjimečného neděje a nejlepší tah je sedět na rukou. Teprve když přijde vzácná, zjevně skvělá příležitost, udeříš rozhodně a velkoryse — a pak zase trpělivě čekáš.\n\nTato disciplína je těžká, protože nicnedělání nám připadá jako promarněný čas a svrbí nás „něco dělat“. Právě ta netrpělivost ale vyrábí většinu chyb: zbytečné tahy, přeplácané příležitosti, pohyb pro pohyb.\n\nDnes odolej nutkání „něco udělat“ jen proto, abys byl aktivní. Šetři rozhodné tahy na chvíle, kdy je věc opravdu jasná.\n\nVe zkratce: Většinu času vydělává trpělivost, ne aktivita — čekej v klidu a udeř, až přijde vzácná jasná příležitost."
+        },
+        {
+          "theme": "Spolehlivost a čest se vyplácí",
+          "body": "Munger opakuje, že dlouhodobě se nejvíc vyplatí být férový, spolehlivý a čestný — ne z naivity, ale z čirého rozumu. Pověst se skládá roky a jediné selhání ji dokáže zničit. Lidé i příležitosti se přirozeně hrnou k těm, kterým se dá věřit.\n\nProto se vyplatí dělat i to, co po tobě nikdo nekontroluje, a držet slovo i tam, kde by ošizení prošlo. Krátkodobě to občas stojí víc; dlouhodobě je to jedna z nejlepších investic vůbec.\n\nDnes se u nějakého rozhodnutí zeptej ne „co mi projde“, ale „co ze mě dělá člověka, kterému se dá věřit“. Čest je dlouhodobě i ta nejvýhodnější strategie.\n\nVe zkratce: Buď spolehlivý a čestný i tam, kde by ošizení prošlo — pověst se skládá roky a je nejlepší investicí."
+        },
+        {
+          "theme": "Buď učící se stroj",
+          "body": "Munger tvrdí, že nikdo z lidí, které obdivuje, se nepřestal učit — sám sebe popisuje jako „učící se stroj“. Svět se mění a znalosti zastarávají; kdo se každý den posune aspoň o kousek, ten druhé v čase předběhne, i kdyby začínal pomaleji. Vzdělávání nekončí školou, tam teprve začíná.\n\nNejde o formální tituly, ale o zvyk denně číst, přemýšlet a opravovat si vlastní názory. Právě průběžné učení je ta nejjistější cesta, jak zůstat relevantní a mít stále víc mentálních modelů po ruce.\n\nDnes se nauč jednu novou věc pořádně — přečti, promysli, spoj s tím, co už víš. Malý denní posun se v čase skládá jako úrok.\n\nVe zkratce: Buď „učící se stroj“ — malý denní posun tě v čase předběhne i rychlejší, kdo se učit přestal."
+        },
+        {
+          "theme": "Pobídky řídí chování",
+          "body": "Munger říká: „Ukaž mi pobídku a já ti ukážu výsledek.“ Lidé se — často nevědomě — chovají podle toho, za co jsou odměňováni. Kdo chce pochopit nebo předpovědět něčí jednání, musí se nejdřív podívat, jaké má ten člověk pobídky, ne jaké má oficiálně cíle.\n\nToto platí i o tobě: když ti něco nejde, zkontroluj, jestli tě systém odměn náhodou netlačí opačným směrem, než chceš jít. Špatně nastavené pobídky porazí i dobré úmysly.\n\nDnes u nějakého chování (svého i cizího) se zeptej, jaká pobídka za ním stojí. Když chceš změnit výsledek, změň nejdřív odměnu, ne domluvy.\n\nVe zkratce: Lidé jednají podle svých pobídek — chceš-li jiný výsledek, změň odměnu, ne domluvy."
+        },
+        {
+          "theme": "Soustřeď se na to, co nedělat",
+          "body": "Munger radí věnovat aspoň tolik pozornosti tomu, čemu se vyhnout, jako tomu, co dělat. Většina lidí honí seznam „co všechno udělám“, ale úspěch v čase často víc ovlivní krátký seznam „čeho se nikdy nedopustím“ — nespolehlivosti, dluhů, které tě položí, sázek, co tě můžou zničit.\n\nJe to praktická podoba invertování: chránit se před sebezničením je jistější než honit se za každou výhrou. Kdo se vyhne velkým průšvihům, vydrží ve hře dost dlouho, aby se dobré věci stihly nasčítat.\n\nDnes si vedle „co chci dělat“ napiš i „čeho se za žádnou cenu nedopustím“. Ten druhý seznam tě často ochrání víc než ten první.\n\nVe zkratce: Věnuj pozornost i tomu, čeho se nikdy nedopustit — vyhnout se sebezničení chrání víc než honba za výhrami."
+        }
+      ]
+    }
+  ]
+}

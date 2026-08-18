@@ -35,9 +35,21 @@
     const bodyEl = $("body");
     bodyEl.innerHTML = "";
     data.body.split(/\n\s*\n/).forEach((para) => {
-      const p = document.createElement("p");
-      p.textContent = para.trim();
-      bodyEl.appendChild(p);
+      const text = para.trim();
+      const summary = text.match(/^Ve zkratce:\s*(.*)$/s);
+      if (summary) {
+        const p = document.createElement("p");
+        p.className = "summary";
+        const label = document.createElement("strong");
+        label.textContent = "Ve zkratce: ";
+        p.appendChild(label);
+        p.appendChild(document.createTextNode(summary[1]));
+        bodyEl.appendChild(p);
+      } else {
+        const p = document.createElement("p");
+        p.textContent = text;
+        bodyEl.appendChild(p);
+      }
     });
 
     $("verified").hidden = !data.verified;

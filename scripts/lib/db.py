@@ -45,6 +45,17 @@ def insert(table: str, row: dict[str, Any], return_row: bool = False) -> dict | 
     return None
 
 
+def delete_all(table: str) -> None:
+    """Delete every row in a table (id > 0 matches all). Cascades via FKs."""
+    resp = requests.delete(
+        f"{_REST}/{table}",
+        headers=_HEADERS,
+        params={"id": "gt.0"},
+        timeout=_TIMEOUT,
+    )
+    resp.raise_for_status()
+
+
 def upsert(table: str, rows: list[dict[str, Any]], on_conflict: str) -> list[dict]:
     """Upsert rows, ignoring duplicates on the given unique column(s)."""
     headers = dict(_HEADERS)
