@@ -1,0 +1,240 @@
+{
+  "_comment": "Dávka 3c — The Pragmatic Programmer, The War of Art, Thinking in Bets, Trhy, Ultralearning. Spisovný styl + shrnutí, parafráze.",
+  "books": [
+    {
+      "title": "The Pragmatic Programmer",
+      "author": "David Thomas & Andrew Hunt",
+      "verified": false,
+      "insights": [
+        {
+          "theme": "Starej se o své řemeslo",
+          "body": "Thomas a Hunt staví celou knihu na postoji: záleží na tom, jak svou práci děláš, a dobrý řemeslník za ni nese odpovědnost. Nedělá odbytou práci s tím, že „to tak nějak funguje“, a nehází chyby na okolnosti. Bere svou práci jako řemeslo, na které je hrdý, a stará se o ni s péčí, i když to nikdo nekontroluje.\n\nZ toho plyne, že profesionalita je hlavně postoj — péče a odpovědnost za výsledek. Kdo se o své řemeslo stará, dělá věci líp než ten, kdo je jen odbývá.\n\nDnes udělej jednu věc s péčí a hrdostí, ne odbytě. Starej se o své řemeslo, i když se to hned nevidí.\n\nVe zkratce: Záleží na tom, jak svou práci děláš — dobrý řemeslník se o ni stará s péčí a nese odpovědnost, nehází chyby na okolnosti; profesionalita je hlavně postoj."
+        },
+        {
+          "theme": "Neopakuj se",
+          "body": "Thomas a Hunt zdůrazňují zásadu „neopakuj se“: každou znalost nebo pravidlo měj na jednom jediném místě, ne rozkopírované na deseti. Když se něco opakuje a je potřeba to změnit, musíš to hledat všude a snadno na některé místo zapomeneš, čímž vzniknou nesrovnalosti. Jedno místo pravdy je spolehlivější a udržitelnější.\n\nZ toho plyne obecná moudrost i mimo kód: opakování je zdroj chyb a zbytečné práce. Co platí, měj definované jednou.\n\nDnes si všimni něčeho, co zbytečně udržuješ na víc místech, a sjednoť to. Neopakuj se — jedno místo pravdy ušetří chyby.\n\nVe zkratce: Neopakuj se — každou znalost měj na jednom místě, ne rozkopírovanou; jinak ji při změně musíš hledat všude a vzniknou nesrovnalosti."
+        },
+        {
+          "theme": "Oprav rozbité okno hned",
+          "body": "Thomas a Hunt používají obraz „rozbitého okna“: když se drobný nepořádek nebo chyba nechá být, dá to signál, že se to tak smí, a nepořádek se začne nabalovat, až se z něj stane chaos. Naopak včasná oprava malé vady udrží celek zdravý. Malé zanedbání se šíří rychleji, než čekáš — proto ho neodkládej.\n\nZ toho plyne pravidlo do života i práce: drobné problémy řeš hned, dokud jsou malé. Zanedbaná maličkost se mění v pořádnou zeď.\n\nDnes oprav jedno „rozbité okno“ — drobnost, kterou jsi nechával být. Malé vady řeš hned, než se nabalí.\n\nVe zkratce: Neopravené „rozbité okno“ (drobná chyba či nepořádek) dá signál, že se to smí, a nabaluje se v chaos — malé vady řeš hned, než se rozšíří."
+        },
+        {
+          "theme": "Investuj do svých znalostí",
+          "body": "Thomas a Hunt přirovnávají tvé znalosti k investičnímu portfoliu, do kterého je třeba pravidelně přispívat a diverzifikovat ho. Svět se mění a to, co umíš dnes, časem zastará — proto se vyplatí soustavně učit něco nového, i mimo svůj hlavní obor. Malé, ale pravidelné investice do vzdělávání se v čase složeně zúročí.\n\nZ toho plyne, že učení není jednorázová věc, ale trvalý zvyk. Kdo pravidelně investuje do svých znalostí, zůstává relevantní.\n\nDnes se nauč něco malého nového — přispěj do svého „portfolia znalostí“. Pravidelné učení se v čase zúročí.\n\nVe zkratce: Ber znalosti jako portfolio, do kterého pravidelně přispíváš a diverzifikuješ — co umíš dnes, zastará; malé pravidelné investice do učení se v čase složeně zúročí."
+        },
+        {
+          "theme": "Nedělej to „náhodou“",
+          "body": "Thomas a Hunt varují před „programováním náhodou“ — když něco funguje, ale ty nevíš proč, jen jsi zkoušel, dokud to nechodilo. Takové řešení je křehké: při první změně se rozpadne a ty netušíš, co se stalo. Mnohem lepší je rozumět tomu, proč věc funguje, aby ses na ni mohl spolehnout a vědomě ji měnit.\n\nZ toho plyne obecné pravidlo: spoléhej na to, čemu rozumíš, ne na to, co „nějak náhodou“ vyšlo. Pochopení dělá řešení spolehlivým.\n\nDnes u něčeho, co „nějak funguje“, zkus pochopit, proč — místo abys se spoléhal na náhodu. Nedělej věci naslepo.\n\nVe zkratce: Nespoléhej na to, co „nějak náhodou“ funguje, aniž víš proč — takové řešení je křehké; rozuměj, proč věc funguje, aby ses na ni mohl spolehnout a vědomě ji měnit."
+        },
+        {
+          "theme": "Odděl věci, aby se nebořily",
+          "body": "Thomas a Hunt doporučují stavět z nezávislých, oddělených částí, které spolu souvisí co nejméně — aby změna jedné nerozbila ostatní. Když je všechno propletené, každý zásah má nepředvídatelné důsledky a systém se stane křehkým. Naopak nezávislé části se dají měnit, opravovat a chápat samostatně.\n\nZ toho plyne princip užitečný i mimo kód: odděluj věci, aby na sobě nebyly zbytečně závislé. Nezávislé části jsou pružnější a odolnější.\n\nDnes u něčeho složitého zkus oddělit části, které spolu nemusí souviset. Oddělení chrání před tím, aby jedna změna zbořila vše.\n\nVe zkratce: Stav z nezávislých, oddělených částí — když je vše propletené, každá změna má nepředvídatelné důsledky a celek je křehký; nezávislé části se snáz mění a chápou."
+        },
+        {
+          "theme": "Buď katalyzátorem změny",
+          "body": "Thomas a Hunt radí nečekat na dokonalé podmínky nebo na svolení, ale rozjet změnu malým, viditelným krokem, který ostatní inspiruje se přidat. Místo velkého plánu, na který nikdo nekývne, ukaž malý funkční kousek — ten často strhne pozornost a lidé se přidají sami. Malý začátek je silnější než velké přesvědčování.\n\nZ toho plyne, že změnu často rozjedeš spíš činem než plánem. Ukázat malý výsledek zabere víc než dlouhé přemlouvání.\n\nDnes u nějaké změny, kterou chceš, udělej malý viditelný krok místo čekání na svolení. Buď katalyzátorem, ne jen navrhovatelem.\n\nVe zkratce: Nečekej na dokonalé podmínky ani na svolení — rozjeď změnu malým viditelným krokem, který ostatní strhne; čin zabere víc než dlouhé přemlouvání."
+        },
+        {
+          "theme": "Dost dobré, které doručíš",
+          "body": "Thomas a Hunt připomínají, že honba za dokonalostí často brání tomu vůbec něco dodat. „Dost dobré“ řešení, které je hotové a v rukou uživatelů, je cennější než dokonalé, které nikdy neopustí tvou hlavu. Nejde o odbývání, ale o vědomé rozhodnutí, kdy je věc dost dobrá na to, aby posloužila, a přestat ji donekonečna leštit.\n\nZ toho plyne, že hotovo a užitečné poráží dokonalé a nedoručené. Uměj poznat, kdy je věc dost dobrá.\n\nDnes něco radši dodej „dost dobré“, než abys to donekonečna leštil. Hotová věc poráží dokonalou v hlavě.\n\nVe zkratce: Honba za dokonalostí brání něco vůbec dodat — „dost dobré“ a hotové je cennější než dokonalé v hlavě; uměj poznat, kdy věc přestat leštit."
+        },
+        {
+          "theme": "Automatizuj, co se opakuje",
+          "body": "Thomas a Hunt vedou k tomu automatizovat opakující se, mechanické činnosti, místo abys je pořád dělal ručně. Ruční opakování je nejen pomalé, ale i náchylné k chybám a únavě. Když jednou nastavíš, aby se rutina dělala sama, ušetříš čas, snížíš chybovost a uvolníš pozornost na to, co vyžaduje hlavu.\n\nZ toho plyne obecná zásada: co se opakuje a dá se zautomatizovat, to automatizuj. Stroj rutinu udělá spolehlivěji než ty ručně.\n\nDnes zvaž, jestli nějakou opakovanou činnost neděláš pořád ručně, když by mohla běžet sama. Automatizuj, co se opakuje.\n\nVe zkratce: Opakující se mechanické činnosti automatizuj místo ručního dělání — ruční opakování je pomalé a chybové; automatizace šetří čas i chyby a uvolní pozornost na to, co vyžaduje hlavu."
+        },
+        {
+          "theme": "Přizpůsobuj se a uč se stále",
+          "body": "Thomas a Hunt zdůrazňují, že v měnícím se světě je klíčová schopnost se přizpůsobovat a stále se učit — držet se křečovitě jednoho nástroje nebo jednoho způsobu je slabina. Pragmatický přístup znamená být pružný, ochotný měnit názor podle nových poznatků a nebát se osvojit nové věci. Adaptabilita je dovednost, která nezastará.\n\nZ toho plyne, že nejcennější není jedna konkrétní znalost, ale schopnost se učit a přizpůsobovat. Pružnost poráží zaseknutost.\n\nDnes buď ochotný změnit svůj obvyklý postup nebo se naučit něco nového. Přizpůsobovat se a učit je dovednost, která nezastará.\n\nVe zkratce: V měnícím se světě rozhoduje schopnost přizpůsobovat se a stále se učit — držet se křečovitě jednoho způsobu je slabina; adaptabilita je dovednost, která nezastará."
+        }
+      ]
+    },
+    {
+      "title": "The War of Art",
+      "author": "Steven Pressfield",
+      "verified": false,
+      "insights": [
+        {
+          "theme": "Odpor: síla, co ti brání tvořit",
+          "body": "Pressfield pojmenovává neviditelného nepřítele každé tvůrčí a smysluplné práce: „Odpor“. Je to vnitřní síla, která tě odrazuje od toho sednout si a udělat důležitou věc — projevuje se jako prokrastinace, výmluvy, strach, náhlá touha dělat cokoli jiného. Odpor není tvá slabost ani znamení, že nemáš talent; je to univerzální překážka, se kterou bojuje každý tvůrce.\n\nZ toho plyne úleva i výzva: to, co tě od práce odrazuje, není důkaz neschopnosti, ale nepřítel, kterého lze pojmenovat a překonat. Poznat Odpor je první krok k jeho porážce.\n\nDnes, když tě něco odrazuje od důležité práce, pojmenuj to jako Odpor, ne jako svou slabost. Odpor lze překonat.\n\nVe zkratce: „Odpor“ je vnitřní síla, která tě odrazuje od důležité práce (prokrastinace, výmluvy, strach) — není to tvá slabost, ale univerzální nepřítel tvůrců, kterého lze pojmenovat a porazit."
+        },
+        {
+          "theme": "Odpor je nejsilnější u nejdůležitějšího",
+          "body": "Pressfield si všímá zákeřné zákonitosti: čím důležitější je pro tvůj růst a duši nějaká činnost, tím větší Odpor proti ní pocítíš. Silný odpor tak paradoxně ukazuje, kudy vede tvá cesta — to, čemu se nejvíc vyhýbáš, je často přesně to, co bys měl dělat. Odpor funguje jako převrácený kompas.\n\nZ toho plyne užitečné vodítko: všímej si, čemu se nejvíc vyhýbáš, protože tam nejspíš leží to podstatné. Silný odpor je ukazatel, ne stopka.\n\nDnes se podívej, čemu se nejvíc vyhýbáš — nejspíš je to přesně to důležité. Odpor ukazuje, kudy vede cesta.\n\nVe zkratce: Čím důležitější činnost, tím větší Odpor proti ní cítíš — to, čemu se nejvíc vyhýbáš, je často přesně to, co máš dělat; Odpor je převrácený kompas."
+        },
+        {
+          "theme": "Staň se profesionálem",
+          "body": "Pressfield rozlišuje amatéra a profesionála. Amatér čeká na inspiraci a náladu a tvoří, jen když se mu chce; profesionál se ukáže a pracuje každý den, ať má náladu, nebo ne. Právě tenhle profesionální přístup — brát svou práci vážně a dělat ji pravidelně jako řemeslo — je to, co poráží Odpor. Nejde o talent, ale o docházení do práce.\n\nZ toho plyne, že klíč k tvorbě není inspirace, ale disciplína ukázat se. Profesionál pracuje, amatér čeká.\n\nDnes se ke své práci postav jako profesionál — udělej ji, i když se ti nechce. Ukázat se poráží čekání na náladu.\n\nVe zkratce: Amatér čeká na inspiraci, profesionál se ukáže a pracuje každý den — právě pravidelnost a přístup k práci jako k řemeslu poráží Odpor; nejde o talent, ale o docházení."
+        },
+        {
+          "theme": "Sedni si a dělej",
+          "body": "Pressfield radí nejjednodušší a nejtěžší věc: sedni si a začni pracovat, bez ohledu na to, jak se cítíš. Nečekej, až budeš mít náladu, jistotu nebo dokonalé podmínky — ty nepřijdou. Samotný akt začít, sednout si a dát se do díla, je vítězstvím nad Odporem. Práce se dělá tělem a rukama, ne čekáním na správný pocit.\n\nZ toho plyne, že nejúčinnější zbraň je prostě začít. Čin poráží pocity — sedni si a dělej.\n\nDnes u něčeho, co odkládáš, si prostě sedni a začni, bez ohledu na náladu. Sednout si a dělat je vítězství nad Odporem.\n\nVe zkratce: Nečekej na náladu, jistotu ani dokonalé podmínky — ty nepřijdou; sedni si a začni, samotný akt začít je vítězstvím nad Odporem."
+        },
+        {
+          "theme": "Inspirace přichází po činu",
+          "body": "Pressfield boří romantickou představu, že napřed přijde inspirace a pak tvoříš. Je to obráceně: nejdřív se pustíš do práce, a teprve tehdy, v procesu, se často dostaví nápady, energie a inspirace. Múza odměňuje toho, kdo se ukáže a začne, ne toho, kdo na ni čeká. Inspirace je odměna za práci, ne její podmínka.\n\nZ toho plyne, že nemáš čekat na chuť a nápady, ale prací si je přivolat. Začni, a inspirace přijde za tebou.\n\nDnes nečekej na inspiraci — začni pracovat a nech ji přijít během toho. Inspirace přichází po činu, ne před ním.\n\nVe zkratce: Inspirace nepřichází před prací, ale během ní — nejdřív se pustíš do díla a teprve pak se dostaví nápady a energie; začni, a inspirace přijde za tebou."
+        },
+        {
+          "theme": "Strach je znamení, ne stopka",
+          "body": "Pressfield vidí ve strachu z tvorby dobré znamení: čím víc se něčeho bojíš, tím víc to pro tebe znamená a tím spíš to máš udělat. Strach neukazuje, že jsi na špatné cestě, ale že jsi na té správné — na hraně, kde se roste. Odvaha není absence strachu, ale jednání navzdory němu; strach je součást cesty, ne důvod k ústupu.\n\nZ toho plyne, že strach z důležité věci ber jako potvrzení, ne jako varování ustoupit. Boj se, a udělej to.\n\nDnes, když se něčeho důležitého bojíš, ber to jako znamení, že to má cenu, a udělej to. Strach je kompas, ne stopka.\n\nVe zkratce: Čím víc se něčeho bojíš, tím víc to pro tebe znamená a tím spíš to máš udělat — strach neukazuje špatnou cestu, ale tu správnou; jednej navzdory strachu."
+        },
+        {
+          "theme": "Prokrastinace je převlečený odpor",
+          "body": "Pressfield ukazuje, že prokrastinace je jen jedna z tváří Odporu — nenápadná, protože ji snadno omluvíme („začnu zítra“, „musím nejdřív tohle“). Právě proto je nebezpečná: přesvědčí nás, že máme dobrý důvod odklad, a přitom nás jen drží od práce. Zítřek, na který odkládáš, se stále posouvá; jediný čas na práci je teď.\n\nZ toho plyne, že odklad „na zítra“ ber s podezřením — bývá to Odpor v převleku. Jediná chvíle na práci je přítomná.\n\nDnes u něčeho, co odkládáš „na zítra“, si přiznej, že je to nejspíš Odpor, a začni teď. Prokrastinace je převlečený odpor.\n\nVe zkratce: Prokrastinace je Odpor v převleku — omluví se („začnu zítra“) a přesvědčí tě, že máš dobrý důvod odkladu; zítřek se posouvá, jediný čas na práci je teď."
+        },
+        {
+          "theme": "Dělej svou práci pro ni samu",
+          "body": "Pressfield radí soustředit se na samotnou práci, ne na její plody — na uznání, odměnu nebo úspěch. Když se upneš na výsledek, dáváš Odporu a strachu ze selhání zbraň; když se oddáš práci pro ni samu, jsi svobodnější a vytrvalejší. Tvým úkolem je odvést dílo; jak dopadne a jak ho přijmou, není plně ve tvé moci.\n\nZ toho plyne, že se máš zaměřit na to, co ovládáš — na samotnou práci — a pustit to ostatní. Oddej se dílu, ne jeho plodům.\n\nDnes u své práce se soustřeď na dobré odvedení, ne na to, jak dopadne nebo kdo ji ocení. Dělej práci pro ni samu.\n\nVe zkratce: Soustřeď se na samotnou práci, ne na její plody (uznání, úspěch) — upnutí na výsledek živí strach ze selhání; oddej se dílu pro ně samo, jak dopadne, plně neovládáš."
+        },
+        {
+          "theme": "Vytrvalost poráží talent",
+          "body": "Pressfield opakuje, že rozhodující není talent, ale vytrvalost — schopnost se den za dnem vracet k práci navzdory Odporu, nezdaru a nechuti. Spousta nadaných lidí nikdy nic nedokončila, protože je Odpor porazil; a spousta méně nadaných uspěla, protože prostě nepřestali. V dlouhé hře vyhrává ten, kdo vydrží, ne ten, kdo má nejlepší předpoklady.\n\nZ toho plyne, že se nemáš spoléhat na talent, ale na vytrvalost. Nevzdat to poráží nadání.\n\nDnes se ke své práci prostě vrať, i když se ti nechce nebo se nedaří. Vytrvalost poráží talent i Odpor.\n\nVe zkratce: Rozhoduje vytrvalost, ne talent — spousta nadaných nic nedokončila, protože je Odpor porazil, a méně nadaní uspěli, protože nepřestali; v dlouhé hře vyhrává ten, kdo vydrží."
+        },
+        {
+          "theme": "Ukázat se každý den je půl výhry",
+          "body": "Pressfield shrnuje celou knihu do prosté praxe: nejdůležitější je ukázat se u své práce každý den, ať se děje cokoli. Ne dokonalý výkon, ne inspirace, ne velké dny — jen spolehlivá pravidelnost. Právě z tohoto každodenního objevování se u díla, i v malém, se skládá všechno velké. Kdo se ukazuje, poráží ty, kdo čekají na dokonalou chvíli.\n\nZ toho plyne, že samotná pravidelnost je vzácnější a mocnější než výjimečné výkony. Ukázat se je půl výhry.\n\nDnes se u své důležité práce prostě ukaž a udělej aspoň kousek. Ukázat se každý den je půl výhry.\n\nVe zkratce: Nejdůležitější je ukázat se u své práce každý den, ať se děje cokoli — ne dokonalý výkon ani inspirace, jen spolehlivá pravidelnost; z každodenního objevování se u díla se skládá vše velké."
+        }
+      ]
+    },
+    {
+      "title": "Thinking in Bets",
+      "author": "Annie Duke",
+      "verified": false,
+      "insights": [
+        {
+          "theme": "Rozhodnutí je sázka v nejistotě",
+          "body": "Duke, bývalá profesionální hráčka pokeru, nabízí přerámování: každé rozhodnutí je vlastně sázka v nejistotě — vsázíš na výsledek, který neznáš, na základě neúplných informací. Nikdy nevíš všechno a budoucnost není jistá, takže i to nejlepší rozhodnutí je odhad pravděpodobností. Přijmout, že rozhoduješ v mlze, tě zbaví iluze jistoty a zlepší tvé myšlení.\n\nZ toho plyne, že se nemáš tvářit, že víš jistě — spíš odhaduj šance a sázej podle nich. Rozhodování je sázka, ne jistota.\n\nDnes ber nějaké rozhodnutí jako sázku v nejistotě, ne jako věc, kterou víš jistě. Rozhoduješ vždy v mlze.\n\nVe zkratce: Každé rozhodnutí je sázka v nejistotě — vsázíš na neznámý výsledek s neúplnými informacemi; přijmout, že rozhoduješ v mlze, tě zbaví iluze jistoty a zlepší myšlení."
+        },
+        {
+          "theme": "Odděl rozhodnutí od výsledku",
+          "body": "Duke varuje před „resultingem“ — sklonem soudit kvalitu rozhodnutí jen podle toho, jak dopadlo. Protože je ve hře náhoda, dobré rozhodnutí může dopadnout špatně a špatné může vyjít. Kdyby ses hodnotil jen podle výsledků, naučil by ses špatné lekce — chválil štěstí a trestal správný úsudek. Kvalitu rozhodnutí je třeba posuzovat zvlášť od jeho výsledku.\n\nZ toho plyne, že se máš ptát „bylo to dobré rozhodnutí podle toho, co jsem tehdy věděl?“, ne jen „jak to dopadlo“. Výsledek neurčuje kvalitu volby.\n\nDnes u nějakého rozhodnutí odděl jeho kvalitu od výsledku — dobrá volba mohla dopadnout smůlou špatně. Nesuď rozhodnutí jen podle výsledku.\n\nVe zkratce: Nesuď kvalitu rozhodnutí jen podle výsledku („resulting“) — kvůli náhodě může dobrá volba dopadnout špatně a naopak; ptej se, jestli bylo dobré podle toho, cos tehdy věděl."
+        },
+        {
+          "theme": "Dobrá volba může dopadnout špatně",
+          "body": "Duke rozvíjí zásadní rozlišení mezi štěstím a dovedností: jeden výsledek ti neřekne, jestli jsi rozhodl dobře, protože do něj promluvila náhoda. Špatný výsledek dobrého rozhodnutí je smůla, ne chyba; dobrý výsledek špatného rozhodnutí je štěstí, ne zásluha. Kdo si to neuvědomuje, mění strategie po jednom nešťastném výsledku a drží se špatných po jednom šťastném.\n\nZ toho plyne, že jeden výsledek není spolehlivý soudce tvého rozhodování. Nezaměňuj smůlu za chybu ani štěstí za um.\n\nDnes u nějakého nezdaru zvaž, jestli to nebyla smůla u dobrého rozhodnutí, ne tvá chyba. Jeden výsledek neklame o kvalitě volby.\n\nVe zkratce: Do výsledku promluví náhoda — špatný výsledek dobré volby je smůla, dobrý výsledek špatné volby je štěstí; jeden výsledek není spolehlivý soudce rozhodování."
+        },
+        {
+          "theme": "Přiznej „nejsem si jistý“",
+          "body": "Duke ukazuje sílu poctivého „nejsem si jistý“. Když si přiznáš, že nevíš jistě, přestaneš se tvářit černobíle a začneš myslet v pravděpodobnostech — a to vede k lepším rozhodnutím i k ochotě se učit. Falešná jistota naopak zavírá mysl a brání opravě. Přiznat nejistotu není slabost, ale realistický a chytřejší postoj.\n\nZ toho plyne, že „nevím jistě“ je začátek lepšího myšlení, ne jeho selhání. Kdo přizná nejistotu, rozhoduje se realističtěji.\n\nDnes u nějakého názoru klidně řekni „nejsem si jistý“ a zvaž pravděpodobnosti místo černobílé jistoty. Přiznaná nejistota otevírá lepší myšlení.\n\nVe zkratce: Poctivé „nejsem si jistý“ tě vede k myšlení v pravděpodobnostech a k učení — falešná jistota zavírá mysl; přiznat nejistotu je realistický a chytřejší postoj, ne slabost."
+        },
+        {
+          "theme": "Rozliš štěstí od dovednosti",
+          "body": "Duke zdůrazňuje, že výsledky jsou vždy směsí dovednosti (co ovlivníš) a štěstí (co ne) — a chytré je pokusit se je od sebe odlišit. Když všechen úspěch připíšeš dovednosti, zpychneš a přestaneš se učit; když vše svedeš na smůlu, nepoučíš se z chyb. Poctivé rozlišení, co bylo dílem tvé volby a co náhody, je základ učení z výsledků.\n\nZ toho plyne, že u každého výsledku se vyplatí ptát, kolik v tom bylo umu a kolik štěstí. Rozlišit obojí tě chrání před pýchou i výmluvami.\n\nDnes u nějakého úspěchu nebo nezdaru poctivě zvaž, kolik v tom bylo dovednosti a kolik náhody. Rozliš štěstí od umu.\n\nVe zkratce: Výsledky jsou směsí dovednosti a štěstí — poctivě je rozlišuj; připsat vše umu plodí pýchu, svést vše na smůlu brání poučení, rozlišení je základ učení z výsledků."
+        },
+        {
+          "theme": "Uč se z výsledků opatrně",
+          "body": "Duke radí učit se ze zkušenosti, ale opatrně — jeden výsledek je jen jeden vzorek, do kterého promluvila náhoda, takže z něj nelze dělat rychlé závěry. Kdo mění celou strategii po jediném nezdaru nebo úspěchu, se učí ze šumu, ne ze signálu. Poučení má vycházet z většího množství případů a z kvality rozhodnutí, ne z jednoho dramatického výsledku.\n\nZ toho plyne, že se máš učit z výsledků, ale nepřehánět váhu jednoho z nich. Jeden případ je vzorek, ne pravda.\n\nDnes neměň celý přístup kvůli jednomu výsledku — počkej, jestli se vzorec opakuje. Uč se z výsledků, ale opatrně.\n\nVe zkratce: Uč se ze zkušenosti opatrně — jeden výsledek je jen vzorek s příměsí náhody; kdo mění strategii po jednom nezdaru či úspěchu, se učí ze šumu, ne ze signálu."
+        },
+        {
+          "theme": "Chtěj pravdu, ne mít pravdu",
+          "body": "Duke zdůrazňuje rozdíl mezi touhou mít pravdu (a bránit svůj názor) a touhou znát pravdu (a být ochoten svůj názor opravit). Kdo chce hlavně mít pravdu, hledá důkazy, které mu vyhovují, a ignoruje ty ostatní; kdo chce znát pravdu, aktivně hledá, kde se možná mýlí. Právě tenhle posun od obhajoby k hledání dělá z člověka lepšího rozhodovatele.\n\nZ toho plyne, že cennější než vyhrát spor je dobrat se pravdy, i kdyby to znamenalo přiznat omyl. Chtít pravdu poráží chtít mít pravdu.\n\nDnes u nějakého názoru aktivně hledej, kde se možná mýlíš, místo abys ho jen obhajoval. Chtěj znát pravdu, ne mít pravdu.\n\nVe zkratce: Chtít znát pravdu (a opravit názor) poráží chtít mít pravdu (a bránit ho) — kdo chce mít pravdu, hledá jen vyhovující důkazy; posun od obhajoby k hledání dělá lepšího rozhodovatele."
+        },
+        {
+          "theme": "Aktualizuj přesvědčení",
+          "body": "Duke doporučuje brát své názory ne jako pevné pravdy, ale jako odhady s určitou mírou jistoty, které průběžně upravuješ, když přijdou nové důkazy. Držet se křečovitě jednou vysloveného názoru bez ohledu na fakta je past; ochota posunout své přesvědčení podle nové informace je znak dobrého myšlení. Přesvědčení má být pracovní odhad, ne nedotknutelná vlajka.\n\nZ toho plyne, že měnit názor podle důkazů je síla, ne vrtkavost. Dobré přesvědčení se v čase upravuje.\n\nDnes u nějakého názoru buď ochotný ho posunout, když přijde nový důkaz. Aktualizovat přesvědčení je znak dobrého myšlení.\n\nVe zkratce: Ber názory jako odhady s mírou jistoty, které upravuješ podle nových důkazů — křečovité držení názoru bez ohledu na fakta je past; ochota posunout přesvědčení je síla, ne vrtkavost."
+        },
+        {
+          "theme": "Vyhledej vnější pohled",
+          "body": "Duke radí obklopit se lidmi a názory, které tě ochotně opraví, a aktivně vyhledávat pohledy odlišné od tvého — protože sami sebe snadno obelžeme, ale druhý často vidí naše slepá místa. Skupina, která si navzájem zpochybňuje myšlenky ve jménu pravdy, se rozhoduje líp než jednotlivec zamčený ve vlastní hlavě. Vnější pohled je zrcadlo, které ti sám nenastavíš.\n\nZ toho plyne, že u důležitých rozhodnutí se vyplatí vyžádat si upřímný cizí názor. Druhý vidí, co ty přehlédneš.\n\nDnes si u nějakého rozhodnutí vyžádej upřímný pohled někoho, kdo tě opraví. Vnější pohled odhalí tvá slepá místa.\n\nVe zkratce: Vyhledávej názory odlišné od tvého a lidi, kteří tě opraví — sami sebe snadno obelžeme, ale druhý vidí naše slepá místa; vnější pohled je zrcadlo, které si sám nenastavíš."
+        },
+        {
+          "theme": "Sázej podle šancí, ne jistot",
+          "body": "Duke celý přístup shrnuje: rozhoduj se jako dobrý sázkař — odhadni pravděpodobnosti, zvaž, kolik můžeš získat a ztratit, a vsaď tam, kde je poměr v tvůj prospěch. Nepotřebuješ jistotu, potřebuješ dobrý odhad šancí a rozvahu nad riziky a přínosy. Kdo takhle přemýšlí, rozhoduje se konzistentně dobře, i když jednotlivé výsledky kolísají.\n\nZ toho plyne, že dobré rozhodování je o pravděpodobnostech a poměru rizika a zisku, ne o hledání jistoty. Sázej podle šancí.\n\nDnes u nějaké volby zvaž pravděpodobnosti a poměr toho, co získáš a ztratíš, místo čekání na jistotu. Sázej podle šancí, ne jistot.\n\nVe zkratce: Rozhoduj se jako dobrý sázkař — odhadni pravděpodobnosti, zvaž zisk a ztrátu a vsaď tam, kde je poměr v tvůj prospěch; nepotřebuješ jistotu, ale dobrý odhad šancí."
+        }
+      ]
+    },
+    {
+      "title": "Trhy",
+      "author": "Dominik Stroukal & Jan Berka",
+      "verified": true,
+      "insights": [
+        {
+          "theme": "Rozumět penězům je dnes klíčové",
+          "body": "Stroukal s Berkou vycházejí z přesvědčení, že nikdy nebylo důležitější rozumět tomu, jak fungují peníze a trhy. Peníze, úrokové sazby a rozhodnutí centrálních bank ovlivňují každodenní život každého z nás — ceny, úvěry, úspory — a přitom jim většina lidí nerozumí. Základní orientace v tom, co se děje s penězi, dnes patří k praktické gramotnosti, ne jen k oboru pro odborníky.\n\nZ toho plyne, že věnovat čas pochopení peněz a trhů se vyplatí každému, ne jen investorovi. Kdo rozumí penězům, líp rozumí světu kolem.\n\nDnes ber pochopení toho, jak fungují peníze a trhy, jako praktickou gramotnost, ne jako téma pro experty. Rozumět penězům je dnes klíčové.\n\nVe zkratce: Peníze, sazby a rozhodnutí centrálních bank ovlivňují každodenní život každého — základní orientace v tom, jak fungují, je dnes praktická gramotnost, ne téma jen pro odborníky."
+        },
+        {
+          "theme": "Jak vznikají peníze",
+          "body": "Autoři vysvětlují na pochopitelných příkladech, jak peníze vlastně vznikají a co se s nimi dál děje — což je pro většinu lidí překvapivě neznámé. Peníze nejsou pevná, neměnná veličina; jejich množství se vytváří a mění, a to má dopady na ceny i na hodnotu úspor. Pochopit, odkud se peníze berou, je základ, na kterém stojí porozumění všemu ostatnímu.\n\nZ toho plyne, že peníze mají svou mechaniku, kterou se vyplatí znát, ne je brát jako danou samozřejmost. Vědět, jak vznikají, je základ.\n\nDnes ber peníze ne jako samozřejmost, ale jako něco, co vzniká a mění se s dopady na tvůj život. Pochop, jak peníze vznikají.\n\nVe zkratce: Peníze nejsou pevná veličina — jejich množství se vytváří a mění, což ovlivňuje ceny i hodnotu úspor; pochopit, odkud se berou, je základ porozumění všemu ostatnímu."
+        },
+        {
+          "theme": "Co dělají centrální banky",
+          "body": "Kniha srozumitelně vysvětluje, jak a proč se rozhodují centrální bankéři — proč zvedají nebo snižují úrokové sazby a co tím sledují. Jejich rozhodnutí, o kterých se často mluví ve zprávách, mají obrovský dopad na ekonomiku, ceny i tvé peníze, i když působí vzdáleně a technicky. Pochopit jejich logiku pomáhá rozumět tomu, proč se ekonomika chová, jak se chová.\n\nZ toho plyne, že „nudné“ zprávy o sazbách se týkají tvého života víc, než se zdá. Rozhodnutí centrálních bank mají praktické dopady.\n\nDnes ber zprávy o rozhodnutí centrální banky jako něco, co se tě reálně týká, ne jako vzdálenou techniku. Pochop, co centrální banky dělají a proč.\n\nVe zkratce: Centrální bankéři svými rozhodnutími o sazbách zásadně ovlivňují ekonomiku, ceny i tvé peníze — pochopit jejich logiku pomáhá rozumět, proč se ekonomika chová, jak se chová."
+        },
+        {
+          "theme": "Trhy reagují na rozhodnutí",
+          "body": "Stroukal s Berkou ukazují, jak finanční trhy reagují na rozhodnutí centrálních bank a další události — často rychle, provázaně a někdy nečekaně. To, co se stane v jedné oblasti (třeba změna sazeb), se přelije do dalších trhů a projeví se na cenách, úvěrech i investicích. Trhy jsou propojený systém, kde jedna změna spouští řetěz dalších reakcí.\n\nZ toho plyne, že věci v ekonomice nestojí izolovaně — vyplatí se vidět souvislosti mezi rozhodnutími a reakcemi. Trhy jsou propojený systém.\n\nDnes ber ekonomické události jako propojené — jedna změna spouští reakce jinde. Trhy reagují na rozhodnutí v řetězci.\n\nVe zkratce: Finanční trhy reagují na rozhodnutí centrálních bank rychle a provázaně — jedna změna (třeba sazeb) se přelije do dalších trhů, cen a úvěrů; trhy jsou propojený systém."
+        },
+        {
+          "theme": "Úrokové sazby a jejich dopad",
+          "body": "Kniha vysvětluje, proč jsou úrokové sazby tak důležité: ovlivňují cenu peněz — jak drahé je půjčovat si a jak výhodné spořit. Když sazby rostou, úvěry zdražují a lidé i firmy si míň půjčují a investují; když klesají, půjčky zlevňují a ekonomika se rozjíždí. Tahle jedna páka se promítá do cen, bydlení, investic i tvých úspor.\n\nZ toho plyne, že rozumět tomu, co dělají sazby, ti pomáhá chápat spoustu ekonomických zpráv i vlastních rozhodnutí. Úrokové sazby jsou klíčová páka.\n\nDnes ber úrokové sazby jako páku, která ovlivňuje cenu peněz i tvá rozhodnutí. Pochop, jak sazby dopadají na ekonomiku.\n\nVe zkratce: Úrokové sazby určují cenu peněz — kdy je drahé si půjčovat a výhodné spořit; jejich růst brzdí půjčky a investice, pokles je rozjíždí, což se promítá do cen, bydlení i tvých úspor."
+        },
+        {
+          "theme": "Trhy souvisí navzájem",
+          "body": "Autoři pokrývají různé trhy — peněžní, dluhopisové, akciové i kryptoměnové — a ukazují, že nejsou oddělené světy, ale spojené nádoby. Co se děje na jednom (třeba změna sazeb u peněz), se přelévá na ostatní. Kdo vidí jen jeden trh izolovaně, přehlédne souvislosti, které pohyby vysvětlují. Pochopit propojení je klíč k tomu nenechat se překvapit.\n\nZ toho plyne, že u ekonomiky se vyplatí dívat na celek a souvislosti, ne na jeden izolovaný kousek. Trhy jsou spojené nádoby.\n\nDnes ber různé trhy jako propojené, ne oddělené — jeden ovlivňuje druhý. Souvislosti mezi trhy vysvětlují pohyby.\n\nVe zkratce: Peněžní, dluhopisové, akciové i kryptoměnové trhy nejsou oddělené světy, ale spojené nádoby — co se děje na jednom, se přelévá na ostatní; kdo vidí jen jeden izolovaně, přehlédne souvislosti."
+        },
+        {
+          "theme": "Rozumět zprávám z ekonomiky",
+          "body": "Jedním z cílů knihy je, aby čtenář rozuměl tomu, o čem se mluví ve zprávách, když se hovoří o sazbách, inflaci nebo trzích. Ekonomické zpravodajství působí složitě a odborně, ale za žargonem jsou pochopitelné mechanismy, které se dají naučit. Kdo jim rozumí, přestane být pasivním divákem a začne chápat, co se za titulky doopravdy děje.\n\nZ toho plyne, že orientace v ekonomických zprávách je dosažitelná dovednost, ne výsada odborníků. Za žargonem jsou pochopitelné věci.\n\nDnes se u nějaké ekonomické zprávy zkus dobrat toho, co za žargonem doopravdy znamená. Rozumět zprávám z ekonomiky se dá naučit.\n\nVe zkratce: Za odborným žargonem ekonomických zpráv jsou pochopitelné mechanismy, které se dají naučit — kdo jim rozumí, přestane být pasivním divákem a chápe, co se za titulky děje."
+        },
+        {
+          "theme": "Peníze nejsou neutrální",
+          "body": "Stroukal s Berkou ukazují, že peníze a měnová politika nejsou neutrální technikálie bez dopadu na obyčejné lidi — naopak, rozhodnutí o penězích přerozdělují bohatství, ovlivňují ceny, spoření i to, kdo v ekonomice získává a kdo ztrácí. To, co vypadá jako suchá čísla centrálních bank, má velmi konkrétní dopady na životy. Peníze jsou mocný nástroj s reálnými důsledky.\n\nZ toho plyne, že se vyplatí nebrat měnovou politiku jako vzdálenou abstrakci, ale jako věc s dopady na tebe. Peníze nejsou neutrální.\n\nDnes ber rozhodnutí o penězích jako něco, co má reálné dopady na životy, ne jako suchou techniku. Peníze nejsou neutrální.\n\nVe zkratce: Peníze a měnová politika nejsou neutrální technikálie — rozhodnutí o penězích přerozdělují bohatství a ovlivňují, kdo získává a kdo ztrácí; suchá čísla mají velmi konkrétní dopady."
+        },
+        {
+          "theme": "Pochop, než investuješ nebo soudíš",
+          "body": "Kniha je určená investorům i široké veřejnosti a nese poselství: než začneš na trzích jednat nebo si o nich dělat pevný názor, měl bys jim aspoň v základu rozumět. Jednat nebo soudit bez pochopení vede k chybám, panice i k podléhání zjednodušeným příběhům. Porozumění je nejlepší ochrana před unáhlenými rozhodnutími i před manipulací.\n\nZ toho plyne obecná zásada: nejdřív pochop, pak teprve jednej nebo soudi. Porozumění chrání před chybami i hype.\n\nDnes u nějakého tématu z ekonomiky dej přednost pochopení před rychlým názorem nebo krokem. Pochop, než investuješ nebo soudíš.\n\nVe zkratce: Než na trzích jednáš nebo si o nich děláš pevný názor, aspoň v základu jim rozuměj — jednat či soudit bez pochopení vede k chybám a panice; porozumění chrání před unáhlením i manipulací."
+        },
+        {
+          "theme": "Věcné porozumění poráží paniku",
+          "body": "Z celé knihy plyne, že klidné, věcné porozumění tomu, jak trhy fungují, je nejlepší obrana proti dvěma nepřátelům: panice ve špatných časech a euforii v dobrých. Kdo chápe mechanismy, nenechá se snadno strhnout dramatickými titulky ani nadšenými sliby. Znalost dodává klid a odstup, který emoce davu nedají.\n\nZ toho plyne, že vzdělání v tom, jak věci fungují, je zdroj klidu i lepších rozhodnutí. Porozumění poráží paniku i hype.\n\nDnes ber klidné porozumění jako svou obranu proti panice i euforii kolem ekonomiky. Věcné pochopení dodává klid.\n\nVe zkratce: Klidné, věcné porozumění, jak trhy fungují, je nejlepší obrana proti panice ve špatných časech i euforii v dobrých — znalost dodává klid a odstup, který emoce davu nedají."
+        }
+      ]
+    },
+    {
+      "title": "Ultralearning",
+      "author": "Scott Young",
+      "verified": false,
+      "insights": [
+        {
+          "theme": "Nauč se, jak se dané téma učit",
+          "body": "Young začíná „metaučením“ — než se pustíš do nové věci, věnuj čas tomu zjistit, jak se ta věc nejlíp učí: co je klíčové umět, jakými metodami to zvládli druzí a jak si sestavit plán. Chvíle strávená přípravou postupu se mnohonásobně vrátí v efektivitě samotného učení. Kdo napřed zjistí, jak se učit, učí se pak mnohem rychleji.\n\nZ toho plyne, že první krok učení není samotné dření, ale rozmyšlení, jak na to. Dobrý plán učení šetří spoustu času.\n\nDnes než se něco začneš učit, chvíli zjisti, jak se to nejlíp učí a co je klíčové. Nauč se napřed, jak se učit.\n\nVe zkratce: Než se pustíš do nové věci, zjisti, jak se nejlíp učí („metaučení“) — co je klíčové umět a jakými metodami; příprava postupu se mnohonásobně vrátí v rychlosti učení."
+        },
+        {
+          "theme": "Intenzita a soustředění",
+          "body": "Young zdůrazňuje, že učení se daří nejlíp v soustředěných, intenzivních dávkách, ne v roztěkaném odbývání mezi rozptýleními. Krátký blok plné pozornosti vytvoří víc než dlouhé hodiny s telefonem po ruce. Soustředění je palivo efektivního učení — a v době rozptýlení vzácná dovednost, kterou se vyplatí chránit a trénovat.\n\nZ toho plyne, že chránit soustředění je půl úspěchu učení. Intenzita poráží roztěkanost.\n\nDnes se něco uč v krátkém bloku plného soustředění, bez rozptýlení. Intenzita a soustředění učení násobí.\n\nVe zkratce: Učení se daří v soustředěných, intenzivních dávkách, ne v roztěkaném odbývání — krátký blok plné pozornosti vytvoří víc než dlouhé hodiny s telefonem po ruce; chraň soustředění."
+        },
+        {
+          "theme": "Uč se děláním té skutečné věci",
+          "body": "Young razí zásadu „přímosti“: uč se přímo tím, že děláš tu skutečnou věc, kterou chceš umět, ne jen okolo ní. Chceš mluvit jazykem? Mluv, ne jen studuj gramatiku. Chceš programovat? Programuj skutečné projekty. Znalosti získané odděleně od reálného použití se špatně přenášejí; přímé procvičování na skutečné věci učí nejúčinněji.\n\nZ toho plyne, že se máš co nejdřív pustit do reálné praxe, ne zůstávat u teorie okolo. Uč se tím, co chceš umět.\n\nDnes se něco uč přímo děláním té skutečné věci, ne jen teorií okolo. Přímost učí nejúčinněji.\n\nVe zkratce: Uč se přímo děláním té skutečné věci, kterou chceš umět, ne okolo ní — znalosti oddělené od reálného použití se špatně přenášejí; přímé procvičování učí nejúčinněji."
+        },
+        {
+          "theme": "Zaměř se na slabá místa",
+          "body": "Young doporučuje najít svá nejslabší místa — ty konkrétní dovednosti nebo úseky, které tě nejvíc brzdí — a cíleně je drilovat zvlášť. Většina lidí procvičuje raději to, co jim už jde, protože je to příjemnější, ale nejvíc je posune právě zaměření na slabiny. Cílený trénink úzkého slabého místa přinese víc než opakování toho, co už umíš.\n\nZ toho plyne, že se máš vědomě věnovat tomu, co ti nejde, ne tomu, co je pohodlné. Slabé místo je největší příležitost k růstu.\n\nDnes procvič cíleně to, co ti nejde, ne to, co ti jde. Zaměř se na slabá místa.\n\nVe zkratce: Najdi svá nejslabší místa a cíleně je drilluj zvlášť — lidé raději procvičují, co už umí, ale nejvíc posune zaměření na slabiny; slabé místo je největší příležitost k růstu."
+        },
+        {
+          "theme": "Vybavování místo pasivního čtení",
+          "body": "Young, podobně jako výzkum učení, zdůrazňuje aktivní vybavování — testovat se, zkoušet si věc zpaměti — místo pasivního opakovaného čtení. Snaha vytáhnout znalost z hlavy paměť posiluje mnohem víc než další přečtení, které dává jen klamný pocit, že to umíš. Namáhavé vybavování je nepohodlné, ale právě proto účinné.\n\nZ toho plyne, že místo dalšího čtení se raději otestuj — vybav si to bez podkladu. Vybavování učí, čtení jen uklidňuje.\n\nDnes se něco uč tak, že se z toho vyzkoušíš zpaměti, ne opakovaným čtením. Vybavování poráží pasivní čtení.\n\nVe zkratce: Uč se aktivním vybavováním (testuj se, zkoušej zpaměti) místo pasivního opakovaného čtení — vytáhnout znalost z hlavy posiluje paměť mnohem víc než další přečtení."
+        },
+        {
+          "theme": "Vyhledávej zpětnou vazbu",
+          "body": "Young zdůrazňuje, že rychlé učení potřebuje zpětnou vazbu — informaci o tom, co děláš dobře a co špatně, abys mohl korigovat. Bez ní si zabetonuješ chyby a nevíš, kde se zlepšit. Vyhledávej ji aktivně, i když je nepříjemná; tvrdá, ale poctivá zpětná vazba tě posune rychleji než pohodlné pochvaly. Chyby, na které tě někdo upozorní, jsou dar, ne útok.\n\nZ toho plyne, že se máš zpětné vazbě nevyhýbat, ale vyhledávat ji. Zpětná vazba, i nepříjemná, zrychluje učení.\n\nDnes si u něčeho, co se učíš, vyžádej upřímnou zpětnou vazbu, i kdyby byla tvrdá. Zpětná vazba tě posune rychleji.\n\nVe zkratce: Rychlé učení potřebuje zpětnou vazbu — bez ní si zabetonuješ chyby; vyhledávej ji aktivně, i tvrdou, poctivá zpětná vazba tě posune rychleji než pohodlné pochvaly."
+        },
+        {
+          "theme": "Rozložené opakování pro udržení",
+          "body": "Young připomíná, že naučit se něco a udržet si to jsou dvě věci — a k udržení slouží rozložené opakování v čase. Když se k látce vracíš v rozestupech, těsně předtím, než ji zapomeneš, ukotví se natrvalo; když se ji naučíš nárazově a nikdy se k ní nevrátíš, vyprchá. Malé pravidelné návraty poráží jednorázové nadrcení.\n\nZ toho plyne, že k trvalému zvládnutí patří plánované opakování, ne jen jednorázové naučení. Rozložené opakování udrží, co ses naučil.\n\nDnes se k něčeru, co ses nedávno naučil, vrať a zopakuj si to. Rozložené opakování drží znalost natrvalo.\n\nVe zkratce: Naučit se a udržet si to jsou dvě věci — k udržení slouží rozložené opakování v čase; návraty těsně před zapomenutím ukotví látku natrvalo, nárazové nadrcení vyprchá."
+        },
+        {
+          "theme": "Buduj intuici, ne memorování",
+          "body": "Young rozlišuje mezi mělkým memorováním faktů a hlubokou intuicí — skutečným pochopením, proč věci fungují, jak fungují. Memorované bez pochopení se rychle zapomene a nepřenese do nových situací; hluboká intuice drží a umožňuje tvořivě aplikovat znalost jinde. Cílem učení není nabiflovat, ale pochopit tak, že to použiješ i tam, kde jsi to neviděl.\n\nZ toho plyne, že se máš snažit věci pochopit do hloubky, ne je jen zapamatovat. Intuice poráží memorování.\n\nDnes se u něčeho nesnaž jen zapamatovat, ale pochopit, proč to tak je. Buduj intuici, ne memorování.\n\nVe zkratce: Cílem učení není nabiflovat fakta, ale vybudovat hlubokou intuici — pochopit, proč věci fungují; memorované bez pochopení se zapomene a nepřenese, intuice drží a dá se tvořivě použít."
+        },
+        {
+          "theme": "Experimentuj s metodami",
+          "body": "Young vyzdvihuje, že u pokročilého učení není jedna univerzální metoda — nejlepší výsledky přijdou, když experimentuješ, zkoušíš různé přístupy a sleduješ, co ti nejvíc funguje. To, co zabralo na začátku, nemusí stačit později; ochota zkoušet nové techniky tě posune dál než ustrnutí u jednoho způsobu. Učení samo je věc, kterou se dá zlepšovat pokusem a omylem.\n\nZ toho plyne, že se máš ke svému učení chovat jako k experimentu, ne jako k jedné pevné rutině. Zkoušej a hledej, co funguje.\n\nDnes zkus u učení jinou metodu, než na jakou jsi zvyklý, a sleduj výsledek. Experimentuj s tím, jak se učíš.\n\nVe zkratce: Neexistuje jedna univerzální metoda učení — experimentuj, zkoušej různé přístupy a sleduj, co funguje; ochota zkoušet nové techniky tě posune dál než ustrnutí u jednoho způsobu."
+        },
+        {
+          "theme": "Uč se sám, cíleně a odvážně",
+          "body": "Young celý přístup staví na tom, že náročné věci se dají zvládnout vlastním, cíleným a odvážným úsilím — nemusíš čekat na kurz nebo školu, můžeš se pustit do intenzivního samostudia podle vlastního plánu. Vyžaduje to disciplínu a ochotu jít do nepohodlí, ale odměnou je schopnost naučit se skoro cokoli sám. Sebeřízené učení je dnes jedna z nejmocnějších dovedností.\n\nZ toho plyne, že nemusíš čekat, až tě někdo naučí — můžeš vzít učení do vlastních rukou. Odvážné samostudium otevírá skoro cokoli.\n\nDnes se pusť do učení něčeho sám, podle vlastního plánu, bez čekání na kurz. Uč se sám, cíleně a odvážně.\n\nVe zkratce: Náročné věci se dají zvládnout vlastním, cíleným a odvážným samostudiem — nemusíš čekat na kurz; vyžaduje to disciplínu a nepohodlí, ale odměnou je schopnost naučit se skoro cokoli sám."
+        }
+      ]
+    }
+  ]
+}
