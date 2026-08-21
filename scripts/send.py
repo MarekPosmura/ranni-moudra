@@ -1,14 +1,21 @@
-"""Ranní moudra — send one insight as an ntfy push notification.
+"""Ranní moudra — send one insight per subscriber as an ntfy push.
 
-Flow:
+Flow (pro KAŽDÉHO aktivního odběratele zvlášť):
   1. Work out whether *now* (Europe/Prague) falls in the morning or the
      afternoon slot. If not, exit quietly (GitHub cron runs in UTC and
      fires several times to cover DST — only the right one sends).
-  2. Guard against double-sends within the same slot today.
-  3. Pick a not-yet-sent insight, avoiding the book sent last time.
-  4. Record it in `activity` and push it via ntfy (silent, low priority).
+  2. Guard against double-sends within the same slot today (per odběratel).
+  3. Pick a not-yet-sent insight from that person's book list, avoiding
+     the book sent last time.
+  4. Record it in `activity` (s subscriber_id) and push it via ntfy on
+     that person's own topic (silent, low priority).
 
-Run manually to test:  python scripts/send.py --force
+Každý odběratel má vlastní ntfy_topic a může mít vyloučené kategorie knih
+(sloupec subscribers.excluded_categories) — to řeší pohled v_unsent_insights.
+
+Run manually to test:
+  python scripts/send.py --force              # pošle všem
+  python scripts/send.py --force --user marek # jen jednomu (podle slug)
 """
 from __future__ import annotations
 
@@ -45,11 +52,19 @@ def current_slot(now: datetime) -> str | None:
     return None
 
 
-def already_sent_in_slot(now: datetime, slot: str) -> bool:
-    """True if a push already went out inside today's slot window.
+def subscribers() -> list[dict]:
+    """Aktivní odběratelé s jejich ntfy tématem."""
+    return db.select(
+        "subscribers",
+        {"select": "id,slug,name,ntfy_topic", "active": "eq.true", "order": "id.asc"},
+    )
 
-    We filter the start in the query (single filter — safe to URL-encode)
-    and check the window end in Python.
+
+def already_sent_in_slot(now: datetime, slot: str, subscriber_id: int) -> bool:
+    """True if a push already went out inside today's slot window for this person.
+
+    We filter the start + subscriber in the query and check the window end
+    in Python.
     """
     start_h, end_h = SLOTS[slot]["window"]
     day = now.date()
@@ -60,6 +75,7 @@ def already_sent_in_slot(now: datetime, slot: str) -> bool:
         {
             "select": "sent_at",
             "channel": "eq.push",
+            "subscriber_id": f"eq.{subscriber_id}",
             "sent_at": f"gte.{win_start.isoformat()}",
             "order": "sent_at.desc",
             "limit": "20",
@@ -72,11 +88,12 @@ def already_sent_in_slot(now: datetime, slot: str) -> bool:
     return False
 
 
-def last_sent_book_id() -> int | None:
+def last_sent_book_id(subscriber_id: int) -> int | None:
     rows = db.select(
         "activity",
         {
             "select": "insight_id,insights(book_id)",
+            "subscriber_id": f"eq.{subscriber_id}",
             "order": "sent_at.desc",
             "limit": "1",
         },
@@ -89,13 +106,16 @@ def last_sent_book_id() -> int | None:
     return None
 
 
-def pick_insight() -> dict | None:
-    """Random unsent insight, avoiding the book we sent last time."""
-    unsent = db.select("v_unsent_insights", {"select": "*"})
+def pick_insight(subscriber_id: int) -> dict | None:
+    """Random unsent insight for this person, avoiding the last book."""
+    unsent = db.select(
+        "v_unsent_insights",
+        {"select": "*", "subscriber_id": f"eq.{subscriber_id}"},
+    )
     if not unsent:
         return None
 
-    last_book = last_sent_book_id()
+    last_book = last_sent_book_id(subscriber_id)
     pool = [row for row in unsent if row["book_id"] != last_book]
     if not pool:  # only the last book has anything left — allow it
         pool = unsent
@@ -109,13 +129,13 @@ def make_teaser(body: str) -> str:
     return text[:TEASER_LEN].rstrip() + "…"
 
 
-def send_push(insight: dict) -> None:
+def send_push(insight: dict, topic: str) -> None:
     title = f"📖 {insight['book_title']} — {insight['theme']}"
     teaser = make_teaser(insight["body"])
     click_url = f"{config.SITE_BASE_URL.rstrip('/')}/?id={insight['insight_id']}"
 
     payload = {
-        "topic": config.NTFY_TOPIC,
+        "topic": topic,
         "title": title,
         "message": teaser,
         "click": click_url,
@@ -126,12 +146,42 @@ def send_push(insight: dict) -> None:
     resp.raise_for_status()
 
 
+def process_subscriber(sub: dict, now: datetime, slot: str | None, force: bool) -> None:
+    label = f"{sub['name']} ({sub['slug']})"
+
+    if not force and slot is not None and already_sent_in_slot(now, slot, sub["id"]):
+        print(f"[send] {label}: slot '{slot}' už dnes odešel — přeskakuji.")
+        return
+
+    insight = pick_insight(sub["id"])
+    if insight is None:
+        print(f"[send] {label}: žádné neposlané myšlenky nezbývají. Vygeneruj další (generate.py).")
+        return
+
+    channel = "manual" if force else "push"
+    db.insert(
+        "activity",
+        {"insight_id": insight["insight_id"], "subscriber_id": sub["id"], "channel": channel},
+    )
+    print(
+        f"[send] {label}: vybráno '{insight['book_title']} — {insight['theme']}' "
+        f"(insight_id={insight['insight_id']}, slot={slot or 'manual'})"
+    )
+    send_push(insight, sub["ntfy_topic"])
+    print(f"[send] {label}: notifikace odeslána přes ntfy. ✅")
+
+
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Send one Ranní moudro push.")
+    parser = argparse.ArgumentParser(description="Send one Ranní moudro push per subscriber.")
     parser.add_argument(
         "--force",
         action="store_true",
         help="Ignore the time window and the same-slot guard (for manual testing).",
+    )
+    parser.add_argument(
+        "--user",
+        metavar="SLUG",
+        help="Pošli jen jednomu odběrateli podle slug (např. marek). Výchozí: všem.",
     )
     args = parser.parse_args()
 
@@ -143,27 +193,21 @@ def main() -> None:
         if slot is None:
             print("[send] Mimo ranní/odpolední okno — nic neposílám.")
             return
-        if already_sent_in_slot(now, slot):
-            print(f"[send] Slot '{slot}' už dnes odešel — přeskakuji (DST/dvojitý cron).")
-            return
     else:
-        slot = slot or "manual"
         print("[send] --force: ignoruji časové okno i pojistku.")
 
-    insight = pick_insight()
-    if insight is None:
-        print("[send] Žádné neposlané myšlenky nezbývají. Vygeneruj další (generate.py).")
+    subs = subscribers()
+    if args.user:
+        subs = [s for s in subs if s["slug"] == args.user]
+        if not subs:
+            print(f"[send] Odběratel se slug '{args.user}' neexistuje (nebo je neaktivní).")
+            return
+    if not subs:
+        print("[send] Žádní aktivní odběratelé. Přidej je do tabulky subscribers.")
         return
 
-    channel = "manual" if args.force else "push"
-    db.insert("activity", {"insight_id": insight["insight_id"], "channel": channel})
-    print(
-        f"[send] Vybráno: '{insight['book_title']} — {insight['theme']}' "
-        f"(insight_id={insight['insight_id']}, slot={slot})"
-    )
-
-    send_push(insight)
-    print("[send] Notifikace odeslána přes ntfy. ✅")
+    for sub in subs:
+        process_subscriber(sub, now, slot, args.force)
 
 
 if __name__ == "__main__":

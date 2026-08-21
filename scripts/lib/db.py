@@ -56,6 +56,19 @@ def delete_all(table: str) -> None:
     resp.raise_for_status()
 
 
+def delete(table: str, params: dict[str, Any]) -> None:
+    """Delete rows matching PostgREST filters (e.g. {'book_id': 'eq.5'}).
+
+    PostgREST refuses an unfiltered DELETE, so `params` must not be empty.
+    """
+    if not params:
+        raise ValueError("delete() vyžaduje aspoň jeden filtr (jinak PostgREST odmítne).")
+    resp = requests.delete(
+        f"{_REST}/{table}", headers=_HEADERS, params=params, timeout=_TIMEOUT
+    )
+    resp.raise_for_status()
+
+
 def upsert(table: str, rows: list[dict[str, Any]], on_conflict: str) -> list[dict]:
     """Upsert rows, ignoring duplicates on the given unique column(s)."""
     headers = dict(_HEADERS)

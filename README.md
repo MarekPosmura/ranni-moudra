@@ -36,12 +36,11 @@ GitHub Actions (cron, UTC)
 ranni-moudra/
 ├─ supabase/
 │  ├─ schema.sql            # tabulky, RLS, pohledy — spustíš v Supabase jednou
-│  └─ seed_insights.json    # startovní knihovna (5 knih × 10 myšlenek), parafráze
-├─ knihy.xlsx              # Excel „ovladač knih“ — přidáváš knihy + metadata ručně
+│  └─ migrations/           # dodatečné migrace (např. více uživatelů)
+├─ knihy.xlsx              # Excel „ovladač knih“ — JEDINÝ zdroj pravdy (knihy + Komu)
 ├─ scripts/
 │  ├─ send.py               # vybere + zapíše + pošle notifikaci (cron i ručně)
-│  ├─ seed.py               # nahraje seed_insights.json do Supabase
-│  ├─ sync_books.py         # načte knihy.xlsx → metadata + dogeneruje nové knihy
+│  ├─ sync_books.py         # načte knihy.xlsx → metadata + knihovny + dogeneruje nové knihy
 │  ├─ generate.py           # generátor jedné knihy přes Claude API
 │  └─ lib/{config,db}.py    # config z env + tenký Supabase klient
 ├─ docs/                    # webová stránka (GitHub Pages)
@@ -82,11 +81,13 @@ Postupuj v tomto pořadí. Odhad: ~30 minut.
    copy .env.example .env
    ```
    Vyplň `SUPABASE_URL` a `SUPABASE_SERVICE_KEY`.
-4. Nahraj startovní knihovnu do Supabase:
+4. Naplň knihovnu ze souboru `knihy.xlsx` (přidá metadata, knihovny a u nových
+   knih dogeneruje myšlenky přes Claude — potřebuje `ANTHROPIC_API_KEY`):
    ```bash
-   python scripts/seed.py
+   python scripts/sync_books.py --dry-run   # náhled, nic nezapíše
+   python scripts/sync_books.py             # ostrý běh
    ```
-   Mělo by vypsat „Celkem 50 myšlenek nahráno“. (Skript je bezpečné pustit znovu — duplicity nevznikají.)
+   Skript je bezpečné pouštět opakovaně — existující knihy se nepřegenerují.
 
 ### 3) ntfy — push na Android
 
@@ -161,7 +162,8 @@ Potřebuje `ANTHROPIC_API_KEY` v `.env`. Máš dvě cesty:
 ### A) Nejjednodušší — Excel [`knihy.xlsx`](knihy.xlsx)
 
 Otevři [`knihy.xlsx`](knihy.xlsx) (list **Knihy**), dopiš řádek — povinné jsou jen **Název** a **Autor**,
-zbytek (Rok, Kategorie, Posílat, Ověřeno, Počet myšlenek, Poznámka) je volitelný a má rozbalovací nabídky.
+zbytek (Rok, Kategorie, Posílat, Ověřeno, Počet myšlenek, Poznámka, **Komu**) je volitelný.
+Sloupec **Komu** říká, do čí knihovny kniha patří: `marek`, `zuzka`, nebo `oba` (prázdné = `marek`).
 Ulož a spusť:
 
 ```bash
@@ -170,7 +172,8 @@ python scripts/sync_books.py
 
 Co skript udělá:
 - **novou** knihu vygeneruje přes Claude a nahraje do Supabase (`Počet myšlenek` řádků),
-- u **existující** knihy jen aktualizuje metadata (autor, rok, kategorie, **Posílat**, poznámka) — negeneruje znovu,
+- u **existující** knihy aktualizuje metadata (autor, rok, kategorie, **Posílat**, poznámka) — negeneruje znovu,
+- nastaví **knihovny** (tabulku `subscriber_books`) podle sloupce **Komu** (přidá i odebere),
 - řádek, jehož **Název** začíná `#`, přeskočí (poznámka/příklad).
 
 Je bezpečné ho pouštět opakovaně. Náhled bez zápisu: `python scripts/sync_books.py --dry-run`.
@@ -188,19 +191,15 @@ python scripts/generate.py --book "Proč spíme" --author "Matthew Walker" --dry
 python scripts/generate.py --book "Proč spíme" --author "Matthew Walker" --count 12
 ```
 
-### Ruční psaní myšlenek
+### Ruční úprava textů
 
-Katalog myšlenek je ve složce [`supabase/seed/`](supabase/seed/) rozdělený po souborech
-(každý má tvar `{"books": [...]}`). `seed.py` načte všechny soubory z té složky.
-Když chceš text upravit sám, edituj příslušný soubor a spusť:
+Vygenerované myšlenky žijí v Supabase v tabulce `insights` (to je živý katalog).
+Když chceš konkrétní text opravit ručně, edituj ho přímo v **Supabase → Table Editor →
+`insights`** (sloupec `body`). Žádný seed soubor už neudržujeme — jediný zdroj knih
+je `knihy.xlsx`, texty vznikají generátorem a dál žijí v databázi.
 
-```bash
-python scripts/seed.py            # doplní/aktualizuje (nechá stávající)
-python scripts/seed.py --fresh    # SMAŽE vše a nahraje katalog čistě znovu
-```
-
-`--fresh` je užitečné po větší úpravě katalogu (třeba změně stylu textů): vymaže
-`books`/`insights`/`activity` a nahraje složku načisto, takže nevzniknou duplicity.
+Chceš-li knize myšlenky vygenerovat úplně znovu (třeba po změně stylu), smaž její
+řádky v `insights` a spusť `sync_books.py` (kniha bez myšlenek se dogeneruje).
 
 - U **novějších knih** si napřed sám ověř jádro myšlenky (web) a přidej `--verified`
   (na stránce se pak ukáže „✓ jádro ověřeno“).

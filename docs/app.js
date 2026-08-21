@@ -3,7 +3,8 @@
 //   ?id=<insight_id>   → jedno moudro (s listováním v rámci knihy)
 //   ?book=<book_id>    → seznam mouder z jedné knihy
 //   ?view=catalog      → seznam všech knih
-//   (bez parametru)    → poslední odeslané moudro
+//   ?user=<slug>       → poslední moudro daného odběratele (marek / zuzka)
+//   (bez parametru)    → poslední odeslané moudro (globálně nejnovější)
 
 (function () {
   const cfg = window.RM_CONFIG || {};
@@ -203,8 +204,13 @@
     });
   }
 
-  async function viewLast() {
-    const rows = await api(`v_last_sent?select=insight_id&limit=1`);
+  // Poslední odeslané moudro. S ?user=<slug> pro konkrétního člověka,
+  // bez něj to globálně nejnovější napříč odběrateli.
+  async function viewLast(userSlug) {
+    const filter = userSlug
+      ? `subscriber_slug=eq.${encodeURIComponent(userSlug)}&limit=1`
+      : `order=sent_at.desc&limit=1`;
+    const rows = await api(`v_last_sent?select=insight_id&${filter}`);
     if (!rows.length) { showStatus("Zatím nebyla odeslána žádná myšlenka. Otevři si nahoře Katalog."); return; }
     await viewInsight(rows[0].insight_id);
   }
@@ -220,7 +226,7 @@
       if (p.get("id")) return await viewInsight(p.get("id"));
       if (p.get("book")) return await viewBook(p.get("book"));
       if (p.get("view") === "catalog") return await viewCatalog();
-      return await viewLast();
+      return await viewLast(p.get("user"));
     } catch (err) {
       console.error(err);
       showStatus("Něco se pokazilo při načítání. Zkus obnovit stránku.");

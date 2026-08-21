@@ -58,7 +58,9 @@ SUPABASE_SERVICE_KEY = get("SUPABASE_SERVICE_KEY")         # service_role / secr
 
 # --- ntfy ---
 NTFY_SERVER = get("NTFY_SERVER", required=False, default="https://ntfy.sh")
-NTFY_TOPIC = get("NTFY_TOPIC")                             # unguessable topic name
+# Témata jsou teď per odběratel v tabulce subscribers (viz send.py).
+# NTFY_TOPIC už není potřeba; ponecháno jen jako volitelná zpětná kompatibilita.
+NTFY_TOPIC = get("NTFY_TOPIC", required=False)
 
 # --- Web page base URL (for the notification click action) ---
 # e.g. https://<user>.github.io/<repo>

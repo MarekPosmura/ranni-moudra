@@ -1,7 +1,10 @@
 """Ranní moudra — synchronizace knih z Excelu (knihy.xlsx) do Supabase.
 
-Pro každý řádek:
+Excel je JEDINÝ zdroj pravdy pro metadata knih i pro to, kdo kterou knihu
+dostává. Pro každý řádek:
   - založí/aktualizuje knihu i s metadaty (autor, rok, kategorie, Posílat, poznámka),
+  - nastaví KNIHOVNU podle sloupce "Komu" (marek / zuzka / oba) — tj. naplní
+    tabulku subscriber_books (přidá i odebere, aby seděla s Excelem),
   - pokud kniha ještě NEMÁ žádné myšlenky, vygeneruje jich `Počet myšlenek` přes Claude.
 Řádek, jehož Název začíná '#', se přeskočí (poznámka/příklad).
 Už existující knihy s myšlenkami se znovu negenerují — je bezpečné pouštět opakovaně.
@@ -12,12 +15,16 @@ Už existující knihy s myšlenkami se znovu negenerují — je bezpečné pou�
 from __future__ import annotations
 
 import argparse
+import re
 from pathlib import Path
 
 from openpyxl import load_workbook
 
 from lib import db
 from generate import call_claude
+
+# Tokeny ve sloupci "Komu", které znamenají „všichni odběratelé".
+WHO_ALL = {"oba", "vse", "vše", "vsichni", "všichni", "all", "*"}
 
 XLSX = Path(__file__).resolve().parents[1] / "knihy.xlsx"
 SHEET = "Knihy"
@@ -32,6 +39,7 @@ HEADER_MAP = {
     "ověřeno": "verified",
     "počet myšlenek": "count",
     "poznámka": "note",
+    "komu": "who",          # marek / zuzka / oba — čí je to knihovna
 }
 
 
@@ -81,8 +89,24 @@ def read_rows() -> list[dict]:
             "verified": as_bool(get("verified"), False),
             "count": as_int(get("count"), 12),
             "note": (str(get("note")).strip() if get("note") else None),
+            "who": (str(get("who")).strip() if get("who") else ""),
         })
     return rows
+
+
+def parse_who(value: str, all_slugs: list[str]) -> list[str]:
+    """'Komu' -> seznam slugů odběratelů. Prázdné = jen 'marek' (vlastník)."""
+    if not value or not value.strip():
+        return ["marek"]
+    result: set[str] = set()
+    for tok in re.split(r"[,/;\s]+", value.strip().lower()):
+        if not tok:
+            continue
+        if tok in WHO_ALL:
+            result.update(all_slugs)
+        else:
+            result.add(tok)
+    return sorted(result)
 
 
 def upsert_book(row: dict) -> int:
@@ -107,6 +131,35 @@ def has_insights(book_id: int) -> bool:
     return len(db.select("insights", {"select": "id", "book_id": f"eq.{book_id}", "limit": "1"})) > 0
 
 
+def load_subscribers() -> dict[str, int]:
+    """slug -> id všech odběratelů (z tabulky subscribers)."""
+    return {s["slug"]: s["id"] for s in db.select("subscribers", {"select": "id,slug"})}
+
+
+def sync_membership(book_id: int, slugs: list[str], sub_by_slug: dict[str, int]) -> None:
+    """Sladí subscriber_books pro danou knihu s Excelem (přidá i odebere)."""
+    unknown = [s for s in slugs if s not in sub_by_slug]
+    for s in unknown:
+        print(f"        ⚠️  neznámý odběratel '{s}' ve sloupci Komu — přeskakuji.")
+    desired = {sub_by_slug[s] for s in slugs if s in sub_by_slug}
+
+    existing = {
+        r["subscriber_id"]
+        for r in db.select("subscriber_books", {"select": "subscriber_id", "book_id": f"eq.{book_id}"})
+    }
+    to_add = desired - existing
+    to_remove = existing - desired
+
+    if to_add:
+        db.upsert(
+            "subscriber_books",
+            [{"subscriber_id": sid, "book_id": book_id} for sid in to_add],
+            on_conflict="subscriber_id,book_id",
+        )
+    for sid in to_remove:
+        db.delete("subscriber_books", {"subscriber_id": f"eq.{sid}", "book_id": f"eq.{book_id}"})
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Synchronizuj knihy.xlsx do Supabase.")
     parser.add_argument("--dry-run", action="store_true", help="Jen vypiš, nic nezapisuj.")
@@ -117,16 +170,21 @@ def main() -> None:
         print("[sync] Žádné platné řádky v knihy.xlsx.")
         return
 
+    sub_by_slug = {} if args.dry_run else load_subscribers()
+    all_slugs = sorted(sub_by_slug) or ["marek", "zuzka"]
+
     print(f"[sync] Zpracovávám {len(rows)} knih…")
     for row in rows:
         label = f"{row['title']} — {row['author']}"
+        slugs = parse_who(row["who"], all_slugs)
         if args.dry_run:
-            print(f"[sync] (dry-run) {label} | Posílat={int(row['active'])} | kat={row['category']}")
+            print(f"[sync] (dry-run) {label} | Posílat={int(row['active'])} | kat={row['category']} | komu={','.join(slugs)}")
             continue
 
         book_id = upsert_book(row)
+        sync_membership(book_id, slugs, sub_by_slug)
         if has_insights(book_id):
-            print(f"[sync] Aktualizována metadata: {label} (myšlenky už má, negeneruji)")
+            print(f"[sync] Metadata + knihovna: {label} (komu={','.join(slugs)}; myšlenky už má)")
             continue
 
         # U méně známých knih pomůže generátoru ověřené jádro z poznámky
